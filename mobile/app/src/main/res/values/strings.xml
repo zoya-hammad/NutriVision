@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">NutriVisionApp</string>
+    <string name="app_logo">App Logo</string>
+    <string name="text_view_log_in_to_your_account">Log In to your Account</string>
+    <string name="edit_text_username">Username</string>
+    <string name="edit_text_password">Password</string>
+    <string name="button_sign_in">Sign In</string>
 </resources>
