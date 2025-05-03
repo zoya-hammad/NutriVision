@@ -8,13 +8,15 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var username :TextInputEditText
-    lateinit var password :TextInputEditText
+    lateinit var usernameEditText :TextInputEditText
+    lateinit var passwordEditText :TextInputEditText
     lateinit var textSignUp : TextView
+    lateinit var signInButton : MaterialButton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +25,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         initialiseVars()
         setupSignUpLink()
-        Toast.makeText(this,"username: $username, pass: $password", Toast.LENGTH_LONG).show()
+        signInButton = findViewById(R.id.button_sign_in)
+        signInButton.setOnClickListener{
+            signIn()
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -32,8 +38,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initialiseVars() {
-        username = findViewById(R.id.edit_text_username)
-        password = findViewById(R.id.edit_text_password)
+        usernameEditText = findViewById(R.id.edit_text_username)
+        passwordEditText = findViewById(R.id.edit_text_password)
     }
 
     private fun setupSignUpLink() {
@@ -44,4 +50,9 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
     }
+
+    private fun signIn() {
+        Toast.makeText(this,"username: ${usernameEditText.text}, pass: ${passwordEditText.text}", Toast.LENGTH_LONG).show()
+    }
+
 }
