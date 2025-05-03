@@ -2,8 +2,18 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.NutriVisionApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/green_dark</item>
+        <item name="colorPrimaryVariant">@color/green_light</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/green_light</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">@style/TextAppearance.NutriVisionApp</item>
     </style>
 
     <style name="Theme.NutriVisionApp" parent="Base.Theme.NutriVisionApp" />
+
+    <style name="TextAppearance.NutriVisionApp" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
 </resources>
