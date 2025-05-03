@@ -5,4 +5,12 @@
     <string name="edit_text_username">Username</string>
     <string name="edit_text_password">Password</string>
     <string name="button_sign_in">Sign In</string>
+    <string name="text_view_don_t_have_an_account">Don\'t have an account?</string>
+    <string name="text_view_sign_up">Sign Up</string>
+    <string name="text_view_sign_in">Sign In\n</string>
+    <string name="text_view_already_have_an_account">Already have an account ?\n</string>
+    <string name="text_view_create_your_account">Create your Account\n</string>
+    <string name="edit_text_email">Email\n</string>
+    <string name="edit_text_confirm_password">Confirm Password\n</string>
+    <string name="button_sign_up">Sign Up</string>
 </resources>
