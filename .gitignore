@@ -1,31 +1,18 @@
 # ----- Android Studio ----
 
-# Gradle files
-.gradle/
-build/
-*/build/
-!gradle/wrapper/gradle-wrapper.jar
-
-# Local configuration
-local.properties
+# General
+.DS_Store
+*.log
 
 # Android Studio
+.gradle/
 .idea/
 *.iml
+local.properties
+build/
 
-# OS files
+# OS/Editor/Log files
 .DS_Store
 Thumbs.db
-
-# APKs, AABs
-*.apk
-*.ap_
-*.aab
-
-# Captures and generated files
-captures/
-.externalNativeBuild/
-.cxx/
-
-# Auto-generated assets/settings
 *.log
+
