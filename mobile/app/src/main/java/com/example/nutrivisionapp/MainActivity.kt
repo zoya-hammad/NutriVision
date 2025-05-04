@@ -53,6 +53,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun signIn() {
         Toast.makeText(this,"username: ${usernameEditText.text}, pass: ${passwordEditText.text}", Toast.LENGTH_LONG).show()
+        val homescreenIntent = Intent(this@MainActivity,SignUp::class.java)
+        homescreenIntent.putExtra("Username", usernameEditText.text.toString())
+        startActivity(homescreenIntent)
     }
 
 }
