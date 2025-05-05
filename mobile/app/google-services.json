@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "91951868590",
+    "project_id": "nutri-vision3251",
+    "storage_bucket": "nutri-vision3251.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91951868590:android:baf10bd8bd3fd794fd5b3f",
+        "android_client_info": {
+          "package_name": "com.example.mad_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvYbsEWhn4nEUC7Ia2y0pJVglgEQ9rZbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
