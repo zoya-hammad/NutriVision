@@ -1,0 +1,1673 @@
+summary
+In the Dutch dietary guidelines 2015, the Health 
+Council specifies the recommended intake of 
+foods and beverages to prevent chronic 
+diseases. These guidelines are meant for the 
+general population. This includes people with 
+type 2 diabetes, a condition that affects around 
+one million people in the Netherlands. At the 
+time, it was not separately assessed whether 
+the Dutch dietary guidelines are entirely  
+appropriate for people with type 2 diabetes.  
+For this group, disease-specific adjustments or 
+additions to the Dutch dietary guidelines may be 
+required. 
+At the request of the State Secretary of Health, 
+Welfare and Sport, the Health Council is now 
+advising on this matter. The Permanent 
+Committee on Nutrition prepared the advisory 
+report.
+Striving for weight reduction
+A large number of people with type 2 diabetes 
+are overweight or obese, and weight reduction 
+can have significant health benefits for these 
+people. People’s energy balance is inextricably 
+linked to dietary intake, which is why the 
+Committee has also addressed weight reduction 
+for people with type 2 diabetes in this advisory 
+report. In case of overweight or obesity, the 
+Committee recommends to strive for a weight 
+reduction of at least 5%, and to maintain this in 
+the long term. For people that aim to lose 
+weight, an energy-restricted diet can be 
+compiled based on the Dutch dietary guidelines. 
+However, weight reduction is complex and 
+usually requires addressing multiple factors, 
+including lifestyle-related factors, at the same 
+time. The Committee stresses that a multi- 
+factorial approach is important, but does not 
+discuss the broad range of options that can 
+contribute to weight reduction and maintenance 
+in this advisory report. 
+No deviations from the  
+Dutch dietary guidelines needed
+Foods and beverages
+The Dutch dietary guidelines 2015 contain 
+several guidelines for the intake of foods and 
+beverages. Of these, the Committee evaluated 
+the guidelines relating to vegetables, fruit,  
+whole grain foods, legumes, sugar-containing  
+beverages, dairy products, coffee and salt for 
+people with type 2 diabetes. This selection was 
+based on existing dietary guidelines for people 
+with type 2 diabetes and on the expert  
+judgement of the Committee. 
+The Committee evaluated the effects of these 
+foods and beverages on the same outcome 
+measures as used in the Dutch dietary  
+guidelines: mortality and morbidity caused by 
+2 42
+
+Executive summary 
+
+
+the top ten chronic diseases in the Netherlands, 
+body weight, LDL cholesterol and blood  
+pressure. For this advisory report it also  
+examined, among other things, the effects on 
+glucose metabolism. The Committee found a 
+limited number of studies in people with type 2 
+diabetes that addressed these outcome  
+measures, and although too little research had 
+been done to arrive at a conclusion in some 
+cases, the outcomes were, generally speaking, 
+in accordance with the Dutch dietary guidelines. 
+The Committee therefore sees no reason to 
+deviate from the Dutch dietary guidelines 2015 
+for people with type 2 diabetes. 
+Dietary patterns
+The Dutch dietary guidelines make the  
+overarching recommendation to eat more plant-
+based foods and fewer animal-based foods, 
+based on evaluations of studies on different 
+dietary patterns, such as Mediterranean, DASH 
+(Dietary Approaches to Stop Hypertension) and 
+vegetarian dietary patterns. Based on existing 
+dietary guidelines for people with type 2 
+diabetes, the Committee concludes that this 
+overarching recommendation also applies to 
+people with type 2 diabetes. 
+A carbohydrate-restricted dietary pattern was 
+not evaluated for the Dutch dietary guidelines, 
+but is covered in existing dietary guidelines for 
+people with type 2 diabetes. The Committee  
+has therefore considered whether to include 
+carbohydrate restriction in the Dutch dietary 
+guidelines for people with type 2 diabetes. 
+The studies evaluated by the Committee 
+included either severe or moderate carbo-  
+hydrate restrictions, replacing carbohydrates 
+with fats, proteins or both. Both the carbo- 
+hydrate-restricted diets and the diets with which 
+they were compared were, in general, calorie-
+restricted diets. The Committee can therefore 
+only make statements about the effects of 
+prescribing a carbohydrate restriction in  
+conjunction with energy restriction. The  
+participants in the studies had type 2 diabetes 
+and were overweight or obese. The studies 
+show that for these people, severe carbohydrate 
+restriction can contribute to weight reduction in 
+the short term (3 to 6 months) and, possibly as a 
+result, improve glucose metabolism compared to 
+a different dietary pattern. However, the studies 
+show there is no difference any more when 
+comparing severe or moderate carbohydrate 
+restriction for 12 months to other dietary 
+patterns. Therefore, for the promotion of long-
+term health, the Committee sees no reason to 
+recommend severe or moderate carbohydrate 
+restriction for people with type 2 diabetes. There 
+are hardly any studies on the health effects of 
+long-term severe or moderate carbohydrate 
+restriction. People with type 2 diabetes who wish 
+to reduce their energy intake are advised to do 
+so under the guidance of a dietician. A dietician 
+can ensure that the Dutch dietary guidelines are 
+taken into account in the compilation of the diet, 
+and that the diet provides sufficient quantities of 
+important nutrients, including for people who 
+prefer to reduce their energy intake by restricting 
+their carbohydrate intake. 
+3 52
+
+Executive summary 
+
+
+Integrated approach 
+The Committee’s recommendations can be used 
+in public information on nutrition and nutritional 
+care for people with type 2 diabetes, for example 
+by the Netherlands Nutrition Centre and  
+dieticians. The Committee stresses that other 
+lifestyle-related factors, such as physical activity, 
+are also important for people with type 2 
+diabetes. In treating type 2 diabetes, the Dutch 
+dietary guidelines should therefore be part of a 
+broader set of interventions that also focus on 
+other lifestyle-related factors.
+4 62
+
+Executive summary 
+
+
+01 
+introduction
+5 72
+
+chapter 01 | Introduction 
+
+
+This advisory report was prepared by the Permanent Committee on  
+Nutrition of the Health Council of the Netherlands. In it, the Committee 
+answers the question asked by the State Secretary of Health, Welfare and 
+Sport as to whether the Dutch dietary guidelines published by the Health 
+Council in 2015 also apply to people with cardiometabolic disorders and 
+whether any disease-specific adjustments or additions are required for 
+them. This request for advice is answered in parts. In this first advisory 
+report, the Committee focuses specifically on people with type 2 diabetes. 
+1.1 Reason for advisory report
+For the general Dutch population (from 2 years of age), the Health  
+Council’s Dutch dietary guidelines 2015 specify the recommended intake 
+of foods and beverages to prevent chronic diseases, including  
+cardiovascular disease, type 2 diabetes and some forms of cancer.1 
+A significant part of the Dutch population already has chronic diseases, 
+such as the cardiometabolic diseases type 2 diabetes and cardiovascular 
+diseases. The Nutrition Committee assumes that the Dutch dietary  
+guidelines 2015 are also suitable for people with cardiometabolic  
+disorders, as these guidelines are largely based on studies in the general 
+population and not only in healthy populations. People with cardio-  
+metabolic disorders are therefore also covered in the evaluations that  
+form the basis of the Dutch dietary guidelines. Several Dutch treatment 
+guidelines for people with type 2 diabetes or cardiovascular disease  
+therefore recommend following the Dutch dietary guidelines.2-4
+At the time, it was not separately assessed whether the Dutch dietary 
+guidelines are entirely appropriate for people with type 2 diabetes. More 
+and more studies in people who already have type 2 diabetes or cardio-
+vascular disease are now being published and there are suggestions that 
+health gains can be achieved for these groups through the diet.5-7 These 
+studies allow improved insight into whether the Dutch dietary guidelines 
+apply to those groups and whether any disease-specific adjustments or 
+additions are required. The State Secretary of Health, Welfare and Sport 
+has now requested the Health Council to issue an advisory report on this 
+matter. The request for advice can be found on the Council’s website. This 
+first advisory report focuses specifically on people who already have type 
+2 diabetes. 
+This report was prepared by the Permanent Committee on Nutrition, with 
+experts from nutritional, behavioural, medical and paramedical disciplines. 
+A list of the Committee’s members can be found at the end of this advisory 
+report. The Health Council Presidency gave stakeholders the opportunity 
+to comment on drafts of the background documents and the advisory 
+report. All comments received and the Committee’s responses to them 
+have been published on the Committee’s website. The Health Council’s 
+Standing Committee reviewed the advisory report, after which the  
+6 82
+
+chapter 01 | Introduction 
+
+
+Council’s Presidency presented it to the State Secretary of Health, 
+Welfare and Sport. 
+1.2 Type 2 diabetes
+In 2019, over 1.1 million people with diabetes were known to their GP in 
+the Netherlands. Diabetes is an umbrella term for various metabolic  
+disorders that lead to permanently elevated levels of blood glucose.  
+The best known and most common forms of these disorders are type 2 
+diabetes and type 1 diabetes. About 90% of people with diabetes have 
+type 2 diabetes. Type 2 diabetes is caused by a combination of genetic 
+predisposition and an unhealthy lifestyle (such as inactivity and an 
+unhealthy diet), with lifestyle-related factors playing the biggest role.  
+Type 2 diabetes occurs more frequently with age, but is also increasingly 
+common in adolescents and young adults.8,9
+In people with type 2 diabetes, the cells in liver, muscle and fat tissue are 
+less sensitive to insulin (insulin resistance). Moreover, the beta cells of the 
+pancreas usually produce low quantities of insulin (beta cell dysfunction). 
+Insulin is a hormone that is responsible for transporting glucose (from food 
+and other sources) to the cells, where it is either used as fuel or stored. 
+Insulin resistance and beta-cell dysfunction cause glucose levels in the 
+blood to rise (hyperglycaemia). People with type 2 diabetes can develop 
+long-term complications such as cardiovascular disease, chronic kidney 
+damage, foot problems and poor vision, which can have a significant 
+negative impact on their quality of life and longevity.3,10 
+1.3 Users of this advisory report 
+This advisory report is intended as a basis for the public information on 
+nutrition provided by the Netherlands Nutrition Centre and patient  
+organisations for people with type 2 diabetes. Dieticians can, in  
+cooperation with other healthcare professionals such as general  
+practitioners, diabetes nurses and internists, provide tailored dietary 
+advice to people with type 2 diabetes. These healthcare professionals  
+can use this advisory report as a reference work. Finally, the Council’s 
+recommendations can be integrated into broader interventions aimed at 
+promoting a healthy lifestyle for people with type 2 diabetes, which are 
+discussed in greater detail in Chapter 5.
+7 92
+
+chapter 01 | Introduction 
+
+
+Different dietary recommendations for people with type 2 diabetes
+The Health Council has written this advisory report for professionals looking to give 
+nutritional information and/or nutritional care to people with type 2 diabetes.  
+The primary goal of this advisory report is to promote long-term health and not to 
+reduce acute signs and symptoms of type 2 diabetes. For this advisory report, the 
+Council used the existing Dutch dietary guidelines as a starting point and consid-
+ered whether there were indications that deviating guidelines might better serve 
+people with type 2 diabetes. The Dutch dietary guidelines are intended as a basis 
+for a healthy and varied dietary pattern and are based on studies on the health 
+effects of different diets, foods and nutrients. The outcomes of these studies were 
+translated into guidelines for foods and beverages (e.g. vegetables, fruit, sugar-
+containing beverages). The findings on nutrients have been used as supporting 
+evidence in making these guidelines on foods and beverages. The Dutch dietary 
+guidelines therefore do not contain separate guidelines on nutrient intake, nor do 
+they provide guidelines on specific diets (such as Mediterranean or DASH). Rather, 
+they make the overarching recommendation, based on research into healthy diets, 
+to eat more plant-based foods and fewer animal-based foods. The principles of 
+these healthy eating patterns are also reflected in the food and beverage guide-
+lines. 
+Several other Dutch and international organisations have also drawn up dietary 
+recommendations for people with type 2 diabetes4,11-16, such as the Netherlands 
+Diabetes Federation (NDF).4 The NDF guideline is intended as a practical support 
+guideline for healthcare professionals who wish to provide personalised nutritional 
+care. The guideline presents ways to prevent diabetes and how to treat people who 
+already have type 1, type 2 or gestational diabetes. The recommendations are 
+aimed at limiting acute symptoms and promoting long-term health. The NDF  
+guideline provides advice on conventional diets, with separate recommendations 
+on nutrients, foods and dietary patterns, as well as on supplements, weight loss 
+methods, lifestyle programmes and exceptional situations. The NDF guideline also 
+provides practical advice and addresses various points of interest. 
+Although the Council’s and the NDF’s recommendations are based on different 
+starting points, and different routes were followed in formulating the guidelines,  
+the dietary recommendations relating to the conventional dietary intake in people 
+already suffering from type 2 diabetes are similar. 
+8 102
+
+chapter 01 | Introduction 
+
+
+1.4 Scope
+Although the studies underlying the Dutch dietary guidelines mainly 
+enlisted adults, the Dutch dietary guidelines are intended for the general 
+population from the age of two years. The studies evaluated for this report 
+were conducted in adults, although type 2 diabetes is becoming  
+increasingly common in children and young adults. From reports on 
+dietary guidelines for people with type 2 diabetes, the Committee found 
+that little or no research has been done on children and young adults 4,11-16 
+However, as with the Dutch dietary guidelines, the Committee sees no 
+reason to believe that its dietary recommendations for people with type 2 
+diabetes would not be a good basis for children and young adults with 
+type 2 diabetes. 
+The recommendations in the advisory report do not apply to people with 
+type 2 diabetes who already require dietary advice for other conditions, 
+such as celiac disease (gluten intolerance). 
+In its evaluation, the Committee mainly found studies that excluded people 
+with serious complications caused by type 2 diabetes, including clinically 
+established macro- and micro-vascular disorders, such as myocardial 
+infarction or severe retinal damage. The Committee’s basic assumption is 
+that the Dutch dietary guidelines can also promote health in people with 
+illnesses as long as there is no scientific evidence that suggests  
+otherwise. No specific scientific evaluation exists for these groups, and 
+according to the Committee’s assumption, the Dutch dietary guidelines 
+can therefore serve as a basis for these groups. 
+The Committee’s recommendations are aimed at promoting long-term 
+health (prevention of the most common chronic diseases, as explained in 
+Section 1.5 Methodology), which was also the objective of the Dutch 
+dietary guidelines. For people with type 2 diabetes, management of daily 
+blood glucose levels is of importance as well. The consumption of foods 
+rich in complex carbohydrates and dietary fibre, which are recommended 
+in the Dutch dietary guidelines 2015, contribute to that.17,18 However, the 
+Committee did not evaluate the effects of dietary factors on acute, post-
+prandial effects because the (individual) short-term management of blood 
+glucose levels is not in the scope of the Dutch dietary guidelines, which 
+focus on long-term prevention of chronic diseases. In addition to dietary 
+intake, other factors, such as taking glucose-lowering medication and 
+physical exercise, also influence blood glucose regulation in individuals 
+throughout the day. Dieticians, together with other health professionals, 
+can take these factors into account and offer tailored dietary advice. 
+A healthy diet is part of a healthy lifestyle, but other lifestyle factors such 
+as getting ample exercise and refraining from smoking are important for 
+people’s general health, including those with type 2 diabetes. This  
+advisory report is limited to dietary recommendations and does not 
+address other lifestyle factors.
+9 112
+
+chapter 01 | Introduction 
+
+
+1.5 Methodology
+1.5.1 Working group
+The Committee set up a working group that prepared the background 
+documents and drew sub-conclusions for each dietary factor and health 
+outcome, before deriving dietary recommendations from this set of sub-
+conclusions. A list of the members of the Diabetes Working Group can be 
+found at the back of this advisory report. A structured approach was 
+followed in preparing this advisory report, as is described in detail in the 
+background document Methodology for the evaluation of evidence.19
+1.5.2 Dutch dietary guidelines as a starting point
+The Committee used the Dutch dietary guidelines 2015 as a starting point 
+and considered whether there were any indications that adjustments or 
+additions might be needed for people with type 2 diabetes. This means 
+that the Committee recommends that people with type 2 diabetes follow 
+the Dutch dietary guidelines 2015, unless proven otherwise. Various  
+treatment guidelines for people with type 2 diabetes, such as the NHG 
+standard, already recommend following the Dutch dietary guidelines 
+2015.2-4 The Committee also assumes that the Dutch dietary guidelines 
+2015 are appropriate for people with type 2 diabetes because they are 
+based on research in the general population and not just in the healthy 
+population. Since part of the general population has type 2 diabetes, this 
+group was implicitly included in the evaluations on which the Dutch dietary 
+guidelines are based. The Dutch dietary guidelines focus on the  
+prevention of common chronic diseases such as coronary heart disease 
+and stroke, which people with type 2 diabetes have an increased risk of 
+developing. However, studies carried out entirely on people already 
+suffering from type 2 diabetes were not considered in preparing the Dutch 
+dietary guidelines. An evaluation of such research could help formulate 
+possible disease-specific adaptations or additions to the Dutch dietary 
+guidelines for people with type 2 diabetes.
+1.5.3 Selection of dietary factors 
+In this advisory report, the Committee uses the term ‘dietary factors’ as an 
+umbrella term for foods, beverages, nutrients and dietary patterns. 
+For eight of the current dietary recommendations in the Dutch dietary 
+guidelines, the Committee saw reasons to conduct a specific evaluation 
+for people with type 2 diabetes, namely the guidelines on fruit and  
+vegetables, whole grain foods, legumes, sugar-containing beverages, 
+dairy products, coffee and salt. In addition, the Committee opted to  
+evaluate carbohydrate-restricted dietary patterns. 
+In selecting these topics, the Committee used Dutch and international 
+reports with dietary guidelines for people with type 2 diabetes.4,11-16 The 
+dietary factors covered in these reports were compared with the dietary 
+factors evaluated for the Dutch dietary guidelines 2015. All dietary factors 
+for which the Dutch dietary guidelines contain recommendations were also 
+10 122
+
+chapter 01 | Introduction 
+
+
+covered in the aforementioned reports. All conclusions or  
+recommendations for a dietary factor that differed from the Dutch dietary 
+guidelines or that had not been evaluated for the Dutch dietary guidelines 
+were considered eligible for evaluation by the Committee. The following 
+considerations were also taken into account in selecting the dietary factors 
+to be evaluated:
+1. Coverage of the dietary factor in one or more of the aforementioned 
+reports; 
+2. Limited scientific evidence on this dietary factor in people with type 2 
+diabetes in the aforementioned reports; 
+3. The expert opinion of the Committee (for example: a dietary factor is 
+under discussion among caregivers, policy officers, researchers and/or 
+patients). 
+A more detailed explanation of the selection of these individual dietary 
+factors is given in the boxes on page 13 and 14.
+Only dietary factors that fit into a conventional dietary pattern were 
+selected, and dietary supplements or specific weight-loss diets (such as 
+intermittent fasting or diets with strict energy restriction and meal  
+replacements) were not considered. 
+For those dietary factors from the Dutch dietary guidelines that were not 
+evaluated by the Committee for the current advisory report, the Committee 
+assumes that they are important for people with type 2 diabetes but that 
+no adjustments are necessary for this group, based on the  
+aforementioned reports.4,11-16
+As many people with type 2 diabetes are overweight or obese and dietary 
+intake is inextricably linked to energy balance, the Committee also 
+addresses the importance of weight reduction. However, the Committee 
+does not make any recommendations on how people with type 2 diabetes 
+can best lose weight and therefore does not specifically address  
+weight-loss diets. 
+Some of the intervention studies on dietary factors from the Dutch dietary 
+guidelines that have been evaluated in people with type 2 diabetes were 
+carried out in combination with mild energy restriction. However, weight 
+reduction was not a primary goal of these studies. In interpreting these 
+studies, the Committee considered whether the prescribed amounts of 
+energy materially differed between the intervention group and the control 
+group. 
+When reviewing intervention studies on a carbohydrate-restricted dietary 
+pattern, it appeared that most of these studies were carried out with the 
+underlying aim of losing weight, but the Committee did not necessarily 
+select this diet as a weight-loss diet. Moreover, this dietary pattern is not 
+only used for weight reduction, as it can also improve blood glucose 
+211 13
+
+chapter 01 | Introduction 
+
+
+levels, which is why the Committee still included this dietary pattern in its 
+advisory report. 
+For people with type 2 diabetes looking to watch their weight (maintain 
+their body weight or limit weight gain), the Committee has included in 
+Chapter 5 several pointers with regard to choices that can be made within 
+the food groups on which the Committee advises, such as product type 
+and quantity. 
+Selection of evaluated dietary factors
+Dairy products Cohort studies show that higher consumption of certain 
+subgroups of dairy products, such as yoghurt, is associated with a lower risk of 
+developing type 2 diabetes.1 This raised the question among the Committee 
+members as to whether dairy products are also beneficial for people who already 
+have type 2 diabetes. The Committee wished to evaluate whether the dairy 
+recommendation could be made more specific with regard to the fat content of the 
+dairy for people with type 2 diabetes. This issue is addressed by only one of the 
+reports with dietary guidelines for people with type 2 diabetes4 and, according to 
+the Committee, it is currently the subject of debate. 
+Coffee There is strong evidence from cohort studies that higher coffee  
+consumption is associated with a lower risk of developing type 2 diabetes.1  
+This raised the question among the Committee members of whether coffee 
+consumption also benefits the long-term health of people who already have type 2 
+diabetes. The association between coffee consumption and the long-term health 
+of people already suffering from type 2 diabetes was addressed in only one of the 
+reports with dietary guidelines for people with type 2 diabetes, dating from 2010.16 
+In order to gain a good understanding of the current state of scientific knowledge 
+by examining more recent literature, the Committee decided to include this topic 
+in its evaluation. 
+(continued on next page)
+212 14
+
+chapter 01 | Introduction 
+
+
+Selection of evaluated dietary factors (continued)
+Salt The Dutch dietary guidelines recommend eating no more than 6 grams of salt 
+per day, which is equivalent to 2400 mg of sodium per day. According to the 
+Committee, it has been debated whether the maximum sodium intake should be 
+lower for people with type 2 diabetes, given their higher risk of developing chronick-
+idney disease and cardiovascular disease.20 The Committee wished to evaluate 
+whether the recommended maximum salt intake should be adjusted for people with 
+type 2 diabetes. Salt is a topic that was also addressed in the reports with dietary 
+guidelines for people with type 2 diabetes.4,11-14,16
+Carbohydrate-restricted dietary patterns and carbohydrate sources Several 
+dietary patterns, such as Mediterranean, DASH and vegetarian dietary patterns, 
+were evaluated for the Dutch dietary guidelines. These dietary patterns were found 
+to be beneficial for overall health. Since the diets in question shared many  
+similarities, such as a relatively high intake of plant-based products and fish and a 
+relatively low intake of red and processed meats and hard fats, the findings on 
+these dietary patterns were ultimately reflected in the overarching recommendation 
+to: ‘Follow a dietary pattern that involves eating more plant-based and less  
+animal-based food’. The underlying principles of these dietary patterns are also 
+reflected in the guidelines on the level of foods and beverages. The Committee 
+found no discrepancies in conclusions about the dietary patterns in question, such 
+as the Mediterranean diet, in reports with guidelines for people with type 2 diabetes. 
+However, it did note that these reports do cover carbohydrate-restricted dietary 
+patterns, which had not been evaluated for the Dutch dietary guidelines.4,11-16 
+These dietary patterns are of particular interest to people with type 2 diabetes, due 
+in part to the fact that carbohydrates directly affect blood glucose levels.21-27  
+The Committee has therefore considered whether the Dutch dietary guidelines for 
+people with type 2 diabetes should set a limit for the maximum recommended 
+percentage of energy derived from carbohydrates.
+As the Dutch dietary guidelines make recommendations about foods and given the 
+fact that the quantity of carbohydrates and the quality of carbohydrate food sources 
+(such as fruit and cereal products) can both matter for health28, the Committee 
+evaluated the carbohydrate food sources about which the Dutch dietary guidelines 
+made recommendations for people with type 2 diabetes. This includes vegetables, 
+fruit, whole grain products, legumes and sugar-containing beverages. The 
+Committee also evaluated the literature on dietary fibre from vegetables, fruit, 
+whole grain and oat products for people with type 2 diabetes. These dietary factors 
+were also addressed in reports presenting dietary guidelines for people with type 2 
+diabetes.4,11-14,16
+213 15
+
+chapter 01 | Introduction 
+
+
+1.5.4 Selection of health outcomes
+The purpose of this advisory report is to promote the long-term health of 
+people with type 2 diabetes. In its evaluation, the Committee used the 
+same health outcomes used for the Dutch dietary guidelines. To this end, 
+it looked at the top ten chronic diseases in the Netherlands measured in 
+terms of mortality, years of life lost and burden of disease. In addition, the 
+Committee searched for studies with all-cause mortality and chronic 
+kidney disease as health outcomes.
+As with the Dutch dietary guidelines, the Committee also considered 
+so-called surrogate outcomes, which can be seen as substitute outcomes 
+for chronic disease and reflect the causal pathway leading from a dietary 
+factor to chronic disease.29 LDL cholesterol, for example, is a surrogate 
+outcome for coronary heart disease. An advantage of such surrogate 
+outcomes is that they make it possible to observe the effects of nutrition 
+relatively soon. For example, effects on LDL cholesterol can be visible in a 
+few weeks, whereas it takes years to observe effects on coronary heart 
+disease. Surrogate outcomes included in this advisory report are body 
+weight, systolic blood pressure and LDL cholesterol. The Committee also 
+looked at HbA1c (a measure that gives an impression of the average 
+blood glucose level over a number of months), fasting blood glucose level, 
+and kidney function (estimated glomerular filtration rate, eGFR).
+In scientific research, more and more attention is being paid to the possi-
+bility of reversing type 2 diabetes with lifestyle interventions (diabetes 
+remission; in which the use of diabetes medication is stopped for more 
+than a year and HbA1c is lower than 48 mmol/mol) or reducing its severity 
+(diabetes reversal; in which the use of diabetes medication is reduced for 
+more than a year and HbA1c is lower than 54 mmol/mol). However, insuf-
+ficient literature was available on these health outcomes that met the 
+Committee’s inclusion criteria, e.g. because diet was examined as part of 
+a larger package of lifestyle interventions or because intervention studies 
+were not randomised. Therefore, the Commission does not address the 
+relationship of the selected nutritional factors to diabetes remission or 
+reversal in this advisory report, and none of its recommendations relate to 
+said phenomena. 
+1.5.5 Literature review and data integration
+To evaluate the health effects of the selected dietary factors in people with 
+type 2 diabetes, the Committee conducted a literature review, relying 
+primarily on meta-analyses, pooled analyses and systematic reviews. Two 
+types of studies were described and assessed: randomised controlled 
+trials (RCTs) and prospective cohort studies. A prospective cohort study 
+examines the relationship between diet and chronic disease by monitoring 
+a group of individuals for an extended period of time. In RCTs, participants 
+are divided into groups by drawing lots, with one group receiving the  
+treatment of which the researchers want to measure the effects, and the 
+214 16
+
+chapter 01 | Introduction 
+
+
+other group serving as a control. Both study types have their own  
+advantages and disadvantages and complement each other. When RCTs 
+are available, the Committee speaks of effects; for findings based on 
+cohort studies, the Committee uses the term associations. In addition to 
+meta-analyses, pooled analyses and systematic reviews, the Committee 
+searched for individual RCTs and cohort studies. 
+In each case, the Committee indicates whether the strength of evidence 
+for an effect or association is strong or limited. Strength of evidence is 
+determined on the basis of the size (number of sub-studies and  
+participants), quality and uniformity of the studies, before weighing all 
+evidence for each food group in its entirety. The Committee considers an 
+effect convincing if strong evidence from cohort studies and RCTs support 
+each other or if there is strong evidence from RCTs. If there is only strong 
+evidence based on cohort studies, the Committee considers the effect 
+plausible. All degrees of evidence (including limited evidence) can support 
+an existing recommendation in the Dutch dietary guidelines 2015. The 
+difference between ‘convincing’ and ‘plausible’ is usually reflected in the 
+wording of the associated guideline. If there is ‘convincing’ evidence, the 
+associated guideline will usually contain a quantitative recommendation 
+(eat or take a certain amount); while no quantitative recommendation will 
+usually be given if the evidence is only ‘plausible’. Only convincing 
+evidence can give rise to modifying an existing recommendation in the 
+Dutch dietary guidelines 2015 for people with type 2 diabetes. 
+To evaluate the health effects of carbohydrate-restricted dietary patterns, 
+the Committee used a report from the Scientific Advisory Committee on 
+Nutrition (SACN; UK) published in 2021 as its point of departure.15 This 
+report contains a review of the scientific evidence on the effects of  
+carbohydrate-restricted dietary patterns in people with type 2 diabetes. 
+The literature selected by SACN was supplemented by more recent  
+literature. 
+1.6 Reading guide
+In Chapter 2, the Committee briefly discusses the importance of weight 
+reduction for people with type 2 diabetes who are overweight or obese. In 
+Chapter 3, it discusses findings on the evaluated foods and beverages 
+from the Dutch dietary guidelines, indicating whether these findings give 
+rise to any changes to the recommendations for people with type 2 
+diabetes. In Chapter 4, the Committee examines the effects of carbo-  
+hydrate-restricted dietary patterns on the health of people with type 2 
+diabetes. Finally, Chapter 5 lists the recommendations and provides some 
+additional advice.
+215 17
+
+chapter 01 | Introduction 
+
+
+02 
+weight reduction 
+and maintenance 
+216 18
+
+chapter 02 | Weight reduction and maintenance 
+
+
+The Committee recommends that people with type 2 diabetes who are 
+overweight or obese should aim for weight reduction and maintain their 
+reduced weight in the long term. For people that aim to lose weight, an 
+energy-restricted diet can be compiled based on the Dutch dietary  
+guidelines. However, weight reduction is complex and usually requires 
+addressing multiple factors, including lifestyle-related factors, at the same 
+time. The Committee stresses that a multi-factorial approach is important, 
+but does not discuss the broad range of options that can contribute to 
+weight reduction and maintenance in this advisory report.
+2.1 Recommendation
+In the case of overweight and/or obesity, aim for at least 5% weight  
+reduction and maintain this in the long term. 
+2.2 Explanation
+A large number of people with type 2 diabetes are overweight or obese, 
+and weight reduction can have significant health benefits for these people. 
+Because dietary intake is inextricably linked to energy balance, the 
+Committee issues additional recommendations on weight reduction for 
+people with type 2 diabetes, supplementing the recommendations given 
+on the Dutch dietary guidelines.
+Definition of overweight and obesity
+By overweight, the Committee means a Body Mass Index (BMI) between 25 and 
+30 kg/m2 for adults up to the age of 70 and a BMI between 28 and 30 kg/m2 for 
+people over 70. Older adults have the lowest risk of mortality with a higher BMI 
+than younger adults, which is why the lower limit for overweight in the elderly is 
+higher. The Committee defines obesity as a BMI of 30 kg/m2 or higher for all 
+adults. There are age-dependent cut-off points for children.30,31 
+The Committee also wishes to note that the health risks of being overweight or 
+obese are not determined by BMI alone. The health risks of being overweight or 
+obese for instance increase when people also have accumulations of abdominal 
+fat.32 
+2.2.1 Findings on weight reduction and maintenance
+A meta-analysis (2015) of regular lifestyle intervention studies shows that 
+5% weight reduction is feasible and can help to improve the health of 
+people with type 2 diabetes. The meta-analysis shows that weight  
+reduction of 5% or more in people with type 2 diabetes who are  
+overweight or obese can lead to significant improvements in their HbA1c, 
+blood lipid values and blood pressure.33 A more recent intervention study 
+shows that more than 5% weight reduction is possible in some people with 
+type 2 diabetes and that this can be maintained over a period of several 
+years. The success factors underlying said weight reduction and  
+maintenance are not yet clear, but it is likely that the intensive supervision 
+in the intervention study played an important role in the success, as did 
+the participants’ profiles. The participants had, for instance, been  
+217 19
+
+chapter 02 | Weight reduction and maintenance 
+
+
+diagnosed with diabetes relatively recently and did not use insulin therapy. 
+Furthermore, an additional analysis showed that 64% of people with type 
+2 diabetes had diabetes remission when they maintained a weight  
+reduction of 10 kg or more for two years.34 
+Other methods can also help achieve weight reduction, but exhaustively 
+listing these methods is beyond the scope of this advisory report. 
+2.2.2 The Dutch dietary guidelines and weight reduction
+The Dutch dietary guidelines advise on dietary quality and are not 
+designed with the primary goal of weight reduction. Nevertheless, people 
+can also restrict their energy intake with a dietary pattern based on the 
+Dutch dietary guidelines. Section 5.2.2 explains how to take energy (and 
+nutrient) requirements into account in translating the Committee’s advice 
+into a recommendation for an individual with type 2 diabetes. Energy-
+restricted eating based on the Dutch dietary guidelines should be seen in 
+a wider context of weight-reduction interventions, as weight reduction can 
+be achieved in several ways, is a complex process and often requires a 
+multifactorial approach.31,35-37
+2.2.3 Weight reduction in children and the elderly
+In children, weight reduction should take growth into account. In the 
+elderly, the consensus is that weight reduction should only be considered 
+in cases of obesity, partly because there is also loss of bone and muscle 
+mass during weight loss.38 
+218 20
+
+chapter 02 | Weight reduction and maintenance 
+
+
+03 
+dutch dietary guidelines
+219 21
+
+chapter 03 | Dutch dietary guidelines 
+
+
+The Dutch dietary guidelines describe the recommended intake of foods 
+and beverages for the prevention of chronic diseases. A limited number of 
+studies have been found that address the dietary factors from the Dutch 
+dietary guidelines 2015 in relation to the health of people with type 2 
+diabetes. Based on the studies found, the Committee sees no reason to 
+recommend deviations from the Dutch dietary guidelines 2015 for this 
+population. 
+3.1 Recommendation
+The Dutch dietary guidelines are a suitable basis for a healthy and varied 
+dietary pattern for people with type 2 diabetes. 
+3.2 Explanation
+The Committee evaluated the 2015 dietary guidelines for fruit, vegetables, 
+whole grain foods, legumes, sugar-containing beverages, dairy products, 
+coffee and salt for people with type 2 diabetes. For the remaining 2015 
+guidelines, the Committee assumes, based on its expertise and evidence-
+based dietary guidelines published by other organisations, that no  
+adjustments are needed for people with type 2 diabetes.4,11-16 In this 
+chapter, the Committee describes its findings for each of the dietary  
+guidelines it evaluated.
+3.2.1 Findings on fruit and vegetables 
+Evaluated dietary factors
+The Committee focused on studies that examined the intake of fruit and/or  
+vegetables. The definition of fruit and vegetables is based on nutritional value, 
+taste and culinary application.39 Fresh fruit, dried fruit and canned fruit were all 
+considered fruit. The definition does not cover fruit or vegetable juices, because 
+they have different nutritional values and food matrices. The evaluated studies 
+dealt mainly with fresh fruit.40
+The Committee intended to include studies on dietary fibre from fruit and  
+vegetables to supplement the evidence from studies on fruit and vegetables, but 
+could not find sufficient relevant research. The Committee mainly found RCTs on 
+supplementation with isolated dietary fibre. Those studies were not included 
+because the effects of isolated and processed fibres on health outcomes may 
+differ substantially from the effects of fibre from the regular diet.41 The Committee 
+also found studies on fibre from a combination of different foods. Those studies 
+were not included because the results of such studies cannot provide sufficient 
+information about the health effects of specific fruit and/or vegetables.42
+Table 1 describes the Committee’s conclusions. Based on cohort studies, 
+the Committee found it plausible that each 100 gram higher intake of fruit 
+reduced the risk of cardiovascular disease with 15% in people with type 2 
+diabetes. This conclusion was based on studies in which the participants 
+ate no more than 400 grams of fruit a day and supports the  
+recommendation on fruit in the Dutch dietary guidelines. The cohort 
+220 22
+
+chapter 03 | Dutch dietary guidelines 
+
+
+studies did not show any unfavourable associations between fruit 
+consumption and the health of people with type 2 diabetes. Based on 
+these findings, the Committee concludes that there is no reason to deviate 
+from the existing guideline for fruit for people with type 2 diabetes. The 
+Committee cannot make any statements about adjusting any quantities 
+specified in the guideline, because the evidence found is plausible (and 
+not convincing; as no RCTs were found). 
+The Committee also found, based on cohort studies, that a higher intake 
+of vegetables is associated with a lower risk of all-cause mortality. This 
+finding supports the recommendation on vegetables in the Dutch dietary 
+guidelines.
+Table 1 Overview of conclusions on the associations of fruit and vegetable  
+consumption with health outcomes based on cohort studies in people with  
+type 2 diabetesa.
+Health outcomeb Fruit Vegetables Combination of fruit 
+and vegetables
+All-cause mortality Inconclusive evidence A higher intake is 
+associated with a lower 
+risk; limited evidence
+No (relevant) studies 
+found
+Morbidity or mortality 
+due to cardiovascular 
+disease 
+The risk decreases by 
+15% with every 100 g/d 
+higher intake; strong 
+evidence
+Too little research Too little research
+Morbidity due to 
+coronary heart disease
+Too little research No (relevant) studies 
+found
+No (relevant) studies 
+found
+Morbidity due to stroke Too little research No (relevant) studies 
+found
+No (relevant) studies 
+found
+Mortality due to cancer Too little research Too little research No (relevant) studies 
+found
+a More information on how the Committee reached these conclusions can be found in the background document 
+Fruit and vegetables.40 
+b The table lists the outcome measures for which (relevant) studies were found. For the outcome measures not 
+shown in the table, no (relevant) studies were found. 
+221 23
+
+chapter 03 | Dutch dietary guidelines 
+
+
+3.2.2 Findings on whole grain foods 
+Evaluated dietary factors 
+The Committee focused on studies on the intake of whole grain foods or oat 
+products. Studies on dietary fibre from whole grain foods and oat products were 
+also considered. Studies on supplementation with isolated dietary fibre and 
+studies on dietary fibre from a combination of different foods were excluded (for 
+the same reasons given in the section on fruit and vegetables).42,43
+Table 2 describes the Committee’s conclusions. There is too little research 
+available on the effects of consuming whole grain foods or oat products on 
+the health of people with type 2 diabetes. However, there are systematic 
+reviews that include some relevant RCTs on the short-term effects of 
+dietary fibre from whole grain foods and oat products on surrogate out-
+comes in people with type 2 diabetes. The RCTs described in these 
+reviews are generally quite limited in size and there is a lot of variation 
+between the RCTs (e.g. in the duration of the study and the amount of 
+fibre examined). Results might also have been biased due to high dropout 
+rates and poor dietary compliance in some RCTs. These differences and 
+limitations have probably led to the fact that there is no conclusive 
+evidence on the effects of dietary fibre from whole grain foods on fasting 
+blood glucose levels. Both favourable and neutral effects were reported, 
+while no unfavourable effects were found. There are too few RCTs to draw 
+conclusions about the effects on other surrogate outcomes, such as 
+HbA1c. 
+The Committee concludes that, for people with type 2 diabetes, there is no 
+reason to deviate from the recommendations on whole grain foods in the 
+Dutch dietary guidelines, because too few studies were found on this 
+subject. For the effects of dietary fibre from whole grain foods on fasting 
+blood glucose levels, the Committee found both favourable and neutral 
+results, and thus no unfavourable results. Therefore, the Committee sees 
+no reason to adjust the recommendation on whole grain foods for people 
+with type 2 diabetes. 
+Table 2 Overview of conclusions on the associations of consumption of (dietary fibre 
+from) whole grain foods and oat products with health outcomes in people with type 2 
+diabetesa.
+Health outcomeb Type of study Results
+All-cause mortality Cohort studies Too little research 
+Mortality due to cardiovascular 
+disease 
+Cohort studies Too little research
+HbA1c RCTs Too little research
+Fasting blood glucose levels RCTs Inconclusive evidencec
+Body weight RCTs Too little research
+LDL cholesterol RCTs Too little research
+Systolic blood pressure RCTs Too little research
+a More information on how the Committee reached these conclusions can be found in the background documents 
+Whole grain foods and Dietary fibre.42,43 
+b The table lists the outcome measures for which (relevant) studies were found. For the outcome measures not 
+shown in the table, no (relevant) studies were found. 
+c Over a period of 1 to 3 months. Too little research was found to allow conclusions to be drawn about effects over 
+a one-year period. 
+222 24
+
+chapter 03 | Dutch dietary guidelines 
+
+
+3.2.3 Findings on legumes 
+Evaluated dietary factors
+The Committee focused on studies on the intake of legumes. By legumes, the 
+Committee means beans, soybeans, lentils, chickpeas and split peas. Peanuts, 
+green peas, podded peas, broad beans and French beans do not belong to the 
+legumes in this advisory report, in accordance with the method adopted for the 
+Dutch dietary guidelines (where the aforementioned foods are classified as nuts 
+or vegetables).1 
+The Committee evaluated soybeans and other legumes separately because 
+soybeans contain more fat, are processed differently and contain isoflavones. 
+However, too little relevant research on soybeans was found. The Committee 
+mainly found RCTs on the effects of supplementation with isolated substances 
+from soybeans, such as isoflavones and soy protein. Those studies were not 
+included because isolated substances may have different health effects than  
+the whole product.44
+Table 3 shows the Committee’s conclusions. Cohort studies show that a 
+higher consumption of legumes is associated with a lower risk of mortality 
+due to cardiovascular disease and all-cause mortality. The level of 
+evidence is limited due to some heterogeneity in the findings between 
+studies and methodological limitations in one of the evaluated studies.  
+For cancer mortality, both neutral and protective associations were found 
+with higher legume consumption. The favourable associations emerging 
+from cohort studies are corroborated by findings from RCTs. Those RCTs 
+show that consumption of legumes, compared to other foods, can reduce 
+HbA1c, fasting blood glucose levels and body weight in people with type 2 
+diabetes. Again, the evidence is limited. This is partly because the RCTs 
+are rather small, differ in design (such as study duration, amount and type 
+of legumes and type of control food) and a number of studies had  
+potentially biased results. 
+The limited evidence available for people with type 2 diabetes supports 
+the recommendation on legumes in the Dutch dietary guidelines. 
+Table 3 Overview of conclusions on the associations between consumption of 
+legumes and health outcomes in people with type 2 diabetesa.
+Health outcomeb Type of study Results
+All-cause mortality Cohort studies A higher intake is associated with a 
+lower risk; limited evidence
+Mortality due to cardiovascular 
+disease 
+Cohort studies A higher intake is associated with a 
+lower risk; limited evidence
+Mortality due to cancer Cohort studies Inconclusive evidence
+HbA1c RCTs A higher intake has a reducing 
+effectc; limited evidence
+Fasting blood glucose levels RCTs A higher intake has a reducing 
+effectc; limited evidence
+Body weight RCTs A higher intake has a reducing 
+effectc; limited evidence
+LDL cholesterol RCTs Too little research
+Systolic blood pressure RCTs Too little research
+a More information on how the Committee reached these conclusions can be found in the background document 
+Legumes.44 
+b The table lists the outcome measures for which (relevant) studies were found. For the outcome measures not 
+shown in the table, no (relevant) studies were found. 
+c Over a period of 1 to 3 months. 
+223 25
+
+chapter 03 | Dutch dietary guidelines 
+
+
+3.2.4  Findings on sugar-containing beverages 
+Evaluated dietary factors 
+ The Committee intended to base its assertions on studies that compared the 
+consumption of sugar-containing beverages with the consumption of beverages 
+without added sugar (in RCTs) or a lower consumption of sugar-containing  
+beverages (in cohort studies). By sugar-containing beverages, the Committee 
+means cold beverages with added sucrose, fructose or glucose, as well as  
+beverages that naturally contain sugars, such as fruit juices. 
+The Committee did not find any appropriate RCTs for its evaluation. It mainly 
+found reviews of RCTs on the effects of fructose compared to a similar amount of 
+energy from other carbohydrates, such as glucose or starch. The Committee did 
+not include these studies in its evaluation of sugar-containing beverages because 
+they examine the substitution of different kinds of carbohydrates, rather than 
+beverages with and without sugars. Moreover, in the vast majority of studies, 
+participants were not or not only given carbohydrates in the form of beverages. 
+The Committee did not find sufficient appropriate cohort studies for its  
+evaluation.40,45
+The Committee did not find sufficient relevant research on sugar-
+containing beverages in people with type 2 diabetes. It therefore 
+concludes that, for people with type 2 diabetes, there is no basis for  
+deviating from the recommendation in the Dutch dietary guidelines to drink 
+as few sugar-containing beverages as possible. More information on the 
+Committee’s evaluation of sugar-containing beverages can be found in the 
+background documents Beverages with added sugar and Fruit and vege-
+tables.40,45
+224 26
+
+chapter 03 | Dutch dietary guidelines 
+
+
+3.2.5 Findings on dairy products 
+Evaluated dietary factors 
+The Committee searched for studies on the intake of dairy products. By dairy 
+products, the Committee means milk and products made from milk, such as 
+yoghurt and cheese. The Committee also searched for studies that distinguished 
+between sub-groups of dairy: whole, semi-skimmed and skimmed milk products 
+and specific (groupings of) dairy products such as milk, fermented products, 
+yoghurt and cheese. In this advisory report, butter is not classified with dairy 
+products. The Committee did not find sufficient studies that could be used for its 
+evaluation of dairy products in general or for sub-groups of dairy product.
+The Committee did find RCTs on probiotic dairy, fortified dairy (such as with 
+vitamin D or calcium) and dairy protein. Almost all studies on probiotic and 
+fortified dairy products compare these products with a non-probiotic or non- 
+fortified dairy product. As such, these studies cannot be used to determine the 
+effect of the dairy product itself, for which reason they were excluded from the 
+Committee’s evaluation. Studies on the effects of dairy proteins, such as whey 
+and casein, focused on acute effects (within a few hours) on the regulation of 
+blood glucose levels. These studies were therefore also excluded. The primary 
+focus of the Committee is long-term health and it is unclear to what extent acute 
+effects can be translated into the longer term.46
+The Committee did not find sufficient relevant research on health effects 
+of dairy products in people with type 2 diabetes. It therefore concludes 
+that, for people with type 2 diabetes, there is no basis for deviating from 
+the recommendation in the Dutch dietary guidelines to take several 
+portions of dairy a day. The Committee also sought to specifically identify 
+whether there were any studies on full-fat versus skimmed or semi-
+skimmed dairy products in people with type 2 diabetes. However, too little 
+research was found to draw any conclusions. The recommendation on 
+dairy products in the Dutch dietary guidelines does not distinguish 
+between the fat content of dairy products, because there was insufficient 
+scientific basis for doing so. The Committee sees no basis for deviating 
+from this for people with type 2 diabetes. More information on the  
+Committee’s evaluation of dairy products can be found in the background 
+document Dairy products.46
+225 27
+
+chapter 03 | Dutch dietary guidelines 
+
+
+3.2.6 Findings on coffee
+ 
+Evaluated dietary factors 
+The Committee focused on studies on coffee intake. Where possible, the 
+Committee distinguished between filtered and unfiltered coffee and between 
+caffeinated and decaffeinated coffee. Cohort studies on caffeine from coffee  
+were also included, as these also reflect coffee consumption. Cohort studies on 
+caffeine in general were not included, as caffeine is also found in other foods 
+(such as tea and soft drinks) and the results of these studies therefore provide 
+insufficient information about the health effects of coffee.
+RCTs were found on the acute effects (within a few hours) of coffee on the  
+regulation of blood glucose levels, but these were not included. The primary focus 
+of the Committee is long-term health and it is unclear to what extent acute effects 
+can be translated into the longer term.47
+The Dutch dietary guidelines recommend replacing unfiltered coffee with 
+filtered coffee, because unfiltered coffee can increase LDL cholesterol.  
+No studies on filtered versus unfiltered coffee in relation to LDL cholesterol 
+(or other health outcomes) in people with type 2 diabetes were found. 
+However, the Committee did specifically look for studies on the  
+association between coffee consumption and chronic diseases, since a 
+protective association with strong evidence was found between coffee 
+consumption and the risk of type 2 diabetes when preparing the Dutch 
+dietary guidelines 2015. 
+Table 4 describes the Committee’s conclusions. Based on cohort studies, 
+the Committee found it plausible that drinking coffee is associated with a 
+lower risk of cardiovascular disease. It found that drinking two to four cups 
+of coffee a day is associated with a 20 to 30% lower risk of cardiovascular 
+disease compared to drinking no coffee or sporadically drinking coffee in 
+people with type 2 diabetes (strong evidence). These studies involved 
+caffeinated coffee or a mix of caffeinated and decaffeinated coffee, with no 
+apparent difference in how these associate with the risk of cardiovascular 
+disease. The studies often did not specify how the coffee was prepared 
+but, based on the countries of origin of the studies, the Committee expects 
+that most of the coffee consumed by the participants was filtered. 
+Based on this, the Committee sees no reason to adjust the  
+recommendation from the Dutch dietary guidelines (replace unfiltered 
+coffee with filtered coffee) for people with type 2 diabetes. The Committee 
+cannot add any quantities to the recommendation, as the association 
+found was only ‘plausible’ (and not ‘convincing’).
+226 28
+
+chapter 03 | Dutch dietary guidelines 
+
+
+Table 4 Overview of conclusions on the associations between coffee intake and health 
+outcomes based on cohort studies in people with type 2 diabetesa.
+Health outcomeb Results
+All-cause mortality A higher intake is associated with a lower risk; limited 
+evidence
+Morbidity or mortality due to 
+cardiovascular disease 
+Drinking two to four cups of coffee a day is associated with a 
+20 to 30% lower risk compared to not drinking coffee or 
+sporadically drinking coffee; strong evidence.
+Morbidity or mortality due to 
+cardiovascular disease 
+A higher intake is associated with a lower risk; limited 
+evidence
+Morbidity or mortality due to stroke Too little research
+Mortality due to cancer Too little research
+a More information on how the Committee reached these conclusions can be found in the background document 
+Coffee.47 
+b The table lists the outcome measures for which (relevant) studies were found. For the outcome measures not 
+shown in the table, no (relevant) studies were found. 
+3.2.7 Findings on salt
+Evaluated dietary factors 
+The Committee focused on studies on the intake of salt (sodium chloride) or 
+sodium. The Committee also included studies on sodium chloride supplements, 
+as it considers these to be similar to adding table salt (sodium chloride). The 
+Committee examined studies where salt or sodium intake was measured in urine 
+collected (preferably repeatedly) over 24 hours, as this method is more reliable 
+than a questionnaire.48 
+Table 5 describes the Committee’s conclusions. RCTs show that a lower 
+intake of sodium can reduce (systolic) blood pressure in people with type 
+2 diabetes, although the evidence is limited. This is partly because the 
+studies are quite small and there is some heterogeneity in findings 
+between studies. The favourable effect of a lower sodium intake supports 
+the recommendation on salt in the Dutch dietary guidelines to limit the 
+intake of salt to no more than 6 grams per day. Based on the RCTs found, 
+the Committee does not rule out the possibility that a further reduction in 
+salt intake has a favourable or more favourable effect on blood pressure in 
+people with type 2 diabetes. However, there is currently too little research 
+to say this with certainty and/or to establish a specific recommended 
+quantity of salt. 
+Table 5 Overview of conclusions on the associations between sodium intake and 
+health outcomes in people with type 2 diabetesa.
+Health outcomeb Type of study Results
+All-cause mortality Cohort studies Too little research
+Mortality due to cardiovascular 
+disease 
+Cohort studies Too little research
+Morbidity due to cardiovascular 
+disease 
+Cohort studies Too little research
+Morbidity due to coronary heart 
+disease, stroke or heart failure 
+Cohort studies Too little research
+HbA1c RCTs Too little research
+Systolic blood pressure RCTs A lower intake has a reducing 
+effectc; limited evidence
+a More information on how the Committee reached these conclusions can be found in the background document 
+Sodium.48 
+b The table lists the outcome measures for which (relevant) studies were found. For the outcome measures not 
+shown in the table, no (relevant) studies were found. 
+c Over a period of 5 days to 3 months. 
+227 29
+
+chapter 03 | Dutch dietary guidelines 
+
+
+04 
+carbohydrate-restricted 
+dietary pattern
+228 30
+
+chapter 04 | Carbohydrate-restricted dietary pattern 
+
+
+The Committee sees no reason to recommend carbohydrate restriction to 
+people with type 2 diabetes. However, it also sees no reason to advise 
+against carbohydrate restriction for people with type 2 diabetes who aim to 
+reduce their energy intake, provided that care is taken to ensure that the 
+dietary pattern provides sufficient quantities of important nutrients and that 
+the Dutch dietary guidelines are taken into account in the compilation of 
+the dietary pattern. Therefore, guidance from a dietician is recommended.
+4.1 Recommendation
+A carbohydrate-restricted dietary pattern may help achieve short-term 
+weight reduction and improve glucose metabolism in people with type 2 
+diabetes who are overweight or obese, but it is not recommended to 
+improve long-term health. This dietary pattern is also not discouraged for 
+people with type 2 diabetes who are overweight or obese and aim to 
+reduce their energy intake. Guidance from a dietician is preferable.
+4.2 Explanation
+The Committee’s recommendation is based on research into health effects 
+over a period no longer than 1 year. The effects of following a carbo-  
+hydrate-restricted dietary pattern for an extended period of time (more 
+than a year) are not sufficiently known. 
+The Committee’s recommendation is based on research into the effects of 
+prescribing a carbohydrate-restricted dietary pattern in conjunction with 
+energy-restriction, and compared with another dietary pattern that reduces 
+energy intake in a different way. This is because the studies that were 
+deemed suitable for the Committee’s evaluation always compared the 
+health effects of a carbohydrate-restricted dietary pattern with the effects 
+of another dietary pattern, both of which were generally energy-restricted 
+diets. 
+The evaluated studies were conducted in people with type 2 diabetes who 
+were also overweight or obese, which is why the Committee’s  
+recommendation applies to this group of people. 
+4.2.1 Findings on carbohydrate restriction
+The box on pages 31 and 32 describes the evaluated carbohydrate-
+restricted dietary patterns and the dietary patterns with which they were 
+compared. Table 6 describes the Committee’s conclusions on the effects 
+of dietary patterns with very low, low and moderate amounts of carbo- 
+hydrates on health outcomes. 
+229 31
+
+chapter 04 | Carbohydrate-restricted dietary pattern 
+
+
+Evaluated dietary factors
+Carbohydrates
+Carbohydrates can be divided into digestible and indigestible carbohydrates. 
+Digestible carbohydrates are energy-providing nutrients (along with proteins, fats, 
+some dietary fibres and, optionally, alcohol). A distinction can be made between 
+mono- and disaccharides (also called sugars), oligosaccharides, polysaccharides 
+and polyols. 
+• Monosaccharides: The main monosaccharides are glucose and fructose. 
+These are found in products such as fruit, fruit juice and certain vegetables 
+such as cabbage and pumpkin. 
+• Disaccharides: The main disaccharides are sucrose and lactose. Sucrose is 
+found in soft drinks, cakes and biscuits, and sugar, jam and chocolate.  
+Lactose occurs naturally only in milk and milk products.
+• Oligosaccharides: Malto-oligosaccharides are mainly derived from partially 
+hydrolysed starch. Fully and partially hydrolysed starch and high-fructose corn 
+syrup are increasingly used in certain countries, especially the United States,  
+to replace sucrose in sweets and soft drinks.
+• Polysaccharides: The main polysaccharide is starch. Major sources of starch 
+are cereal products such as bread, rice and pasta, tuberous plants (potatoes) 
+and legumes.
+• Polyols: These are sugar alcohols used as sweeteners in food. According to 
+European legislation, they fall into the category of carbohydrates, but they are 
+not classified with ‘saccharides’.49 
+Indigestible carbohydrates are dietary fibres. 
+Carbohydrate-restricted dietary patterns
+A carbohydrate-restricted dietary pattern is a dietary pattern with relatively few 
+carbohydrates and relatively large quantities of protein and/or fat. The Committee 
+evaluated the health effects of prescribing:
+1. A diet or dietary pattern low or very low in carbohydrates: 
+a. Very low means: 20 to 50 grams of carbohydrates per day; 10% or less of 
+the overall energy intake comes from carbohydrates. Such a dietary pattern 
+is also known as a ketogenic diet.
+b. Low means between 50 and 130 grams of carbohydrates a day; 10 to 26% 
+of the overall energy intake comes from carbohydrates;
+The Committee also refers to this as a low or very low-carbohydrate ‘diet’, 
+because it differs significantly from the usual dietary pattern of the average 
+adult Dutch person. To illustrate: on average, Dutch adults obtain 43% of their 
+daily energy from carbohydrates50, while the included studies evaluated a 
+carbohydrate intake that, in many cases, did not exceed 20% of the overall 
+energy intake.
+2. A dietary pattern with a moderate amount of carbohydrates: 130 to 230 grams 
+of carbohydrates per day; 26 to 45% of the overall energy intake comes from 
+carbohydrates. The committee refers to this as a ‘dietary pattern’ with a 
+moderate amount of carbohydrates, because the percentage of carbohydrates 
+in such a dietary pattern differs little from that of the average Dutch adult (43% 
+of the overall energy intake).50 The included studies mostly evaluated a 
+carbohydrate intake equal to about 40% of the overall energy intake. 
+230 32
+
+chapter 04 | Carbohydrate-restricted dietary pattern 
+
+
+Evaluated dietary factors (continued)
+The aforementioned definition is based on the most common classification of carbo-
+hydrates, that of Feinman et al.51 As there were too few studies for a stand-alone 
+evaluation of very low-carbohydrate diets, the Committee combined very low and 
+low-carbohydrate diets in its evaluation. Any reference to carbohydrate-restricted 
+dietary patterns in this advisory report refers to very low, low and moderate-carbo-
+hydrate dietary patterns. 
+In the reviewed studies, the carbohydrate-restricted dietary patterns were mostly 
+examined with the underlying goal of weight loss. The carbohydrate-restricted 
+dietary patterns were not always prescribed with an energy restriction, but usually 
+led to a reduction in energy intake, most likely due to the limited food choices 
+available to participants. 
+The definition of carbohydrate-restricted dietary patterns does not distinguish 
+between the type of carbohydrates (such as sugars or starches) or which dietary 
+sources of carbohydrates (such as fruit, grain products, sugar-containing  
+beverages) are restricted. As the evaluated studies only report on this distinction to 
+a limited extent, the Committee was also unable to make a distinction between the 
+type and/or source of carbohydrates in its evaluation.52 
+Diets used for comparison
+The carbohydrate-restricted dietary patterns were compared with various other 
+dietary patterns, such as low-fat, low-glycaemic-index, energy-restricted dietary 
+patterns and dietary patterns in line with the treatment guidelines for type 2 
+diabetes. Most of these dietary patterns were energy-restricted. It is likely that the 
+dietary patterns to which the carbohydrate-restricted dietary patterns are compared 
+also impacted health. Due to the wide variety of dietary patterns in the studies, it 
+was not possible to distinguish between them in the evaluation. However, the 
+Committee did consider whether the dietary patterns to which the carbohydrate-
+restricted dietary patterns were compared were relatively high in protein, fat or both. 
+It was not possible to distinguish between the subtypes of fat (such as saturated, 
+monounsaturated, polyunsaturated) or protein (such as plant-based or animal 
+protein).52
+231 33
+
+chapter 04 | Carbohydrate-restricted dietary pattern 
+
+
+Very low or low-carbohydrate diet 
+The Committee found a convincing effect based on strong evidence from 
+RCTs, namely that, compared to a different energy-restricted dietary 
+pattern, prescribing a low or very-low carbohydrate diet leads to a 0.36% 
+to 0.49% reduction in HbA1c and 2.5 kg in body weight in the short term 
+(3 to 6 months). A short-term reduction in fasting blood glucose levels was 
+also found (limited evidence). In the Committee’s view, it is uncertain 
+whether these effects on HbA1c and body weight are clinically meaningful, 
+as they are short-lived. 
+No studies were found on the occurrence of long-term chronic diseases, 
+such as cardiovascular disease, in relation to a very low or low-carbo-  
+hydrate diet. However, several RCTS were found that examined the 
+longer-term effects on surrogate health outcomes, which usually covered 
+a 12-month period. These studies showed no difference between 
+prescribing a very low or low-carbohydrate diet and other energy-
+restricted diets with more carbohydrates in terms of the effect on HbA1c, 
+body weight and other health outcomes. 
+In the evaluated studies, the Committee noted the participants had  
+difficulties to adhere to a very low or low-carbohydrate diet in the long 
+term, which may explain, at least in part, why the beneficial effects of a 
+very low or low-carbohydrate diet were not seen in the longer term. 
+Dietary pattern with a moderate amount of carbohydrates 
+The evaluated RCTs show no relevant difference between prescribing a 
+dietary pattern with a moderate amount of carbohydrates and a dietary 
+pattern with more carbohydrates that restricts energy intake in another 
+way in terms of the effect on the health of people with type 2 diabetes. 
+This applies to both the short and longer term (usually 12 months). 
+However, the Committee did see variation in the effects (favourable, 
+neutral and unfavourable) of a dietary pattern with a moderate amount of 
+carbohydrates on LDL cholesterol. This point merits further attention (see 
+Section 4.2.2).
+Energy restriction 
+In most cases, the evaluated dietary patterns were restricted in energy 
+intake. As explained in Chapter 2, weight reduction can have health  
+benefits for people with type 2 diabetes. Energy restriction, in the broader 
+context of weight reduction interventions, can contribute to this. Based on 
+the evaluated studies, it seems to make little or no difference whether 
+energy restriction is achieved through carbohydrate restriction or another 
+dietary pattern that restricts energy intake in another way. However, the 
+Committee was unable to make a specific comparison with other dietary 
+patterns, because the dietary patterns to which carbohydrate-restricted 
+dietary patterns were compared in the studies were very diverse. 
+232 34
+
+chapter 04 | Carbohydrate-restricted dietary pattern 
+
+
+Conclusion 
+The Committee’s conclusions are applicable to people with type 2 
+diabetes who are overweight or obese and aim to reduce their energy 
+intake. Based on the aforementioned findings, the Committee concludes 
+that in order to promote long-term health, it sees no reason to recommend 
+carbohydrate restriction to people with type 2 diabetes. However, the 
+Committee also sees no reason to advise against it. Personalising nutri-
+tional advice based on, for example, preferences can help people adhere 
+to a healthy dietary pattern.53 People with type 2 diabetes can opt for 
+carbohydrate restriction, though it must be noted that guidance from a 
+dietician is preferred in this case. 
+Table 6 Overview of conclusions on the effects of a carbohydrate-restricted dietary 
+pattern compared to higher-carbohydrate dietary pattern on health outcomes based on 
+RCTs in people with type 2 diabetes.a
+Health outcomeb Short-term effectsc 
+of very low and 
+low-carbohydrate 
+diets 
+Long-term effectsc 
+of very low and 
+low-carbohydrate 
+diets
+Short-term 
+effects of a 
+moderate-
+carbohydrate 
+dietary pattern
+Long-term 
+effects of a 
+moderate-
+carbohydrate 
+dietary pattern
+HbA1c Reduction of 0.36 to 
+0.49%; 
+strong evidence
+No difference No difference No difference
+Body weight 3 months: 
+Reduction of 2.5 kg; 
+strong evidence
+6 months: 
+No difference
+No difference No difference Reduction of 0.6 
+kg; limited 
+evidence
+Fasting blood 
+glucose levels
+Reducing effect; 
+limited evidence
+Too little research Too little 
+research
+Too little 
+research
+LDL cholesterol No difference Contradictory 
+results
+No difference Contradictory 
+results
+Systolic blood 
+pressure
+Too little research Too little research Too little 
+research
+Too little 
+research
+eGFR Too little research Too little research Too little 
+research
+Too little 
+research
+a More information on how the Committee reached these conclusions can be found in the background document 
+Reduced carbohydrate diets.52 
+b The table lists the outcome measures for which (relevant) studies were found. For the outcome measures not 
+shown in the table, no (relevant) studies were found. 
+c Short-term means: 3 to 6 months; long-term means: 1 year or more.
+233 35
+
+chapter 04 | Carbohydrate-restricted dietary pattern 
+
+
+4.2.2 Points to consider with carbohydrate-restricted dietary 
+patterns
+The Committee has a number of concerns that are important when 
+following a carbohydrate-restricted dietary pattern.
+Professional guidance
+It is recommended that carbohydrate-restricted dietary patterns, and very 
+low or low-carbohydrate diets in particular, be followed only under the 
+guidance of a dietician who can help ensure that the dietary pattern is 
+healthy and complete.
+Carbohydrate restriction and Dutch dietary guidelines 
+To promote long-term health, the Committee recommends to take into 
+account the Dutch dietary guidelines in the compilation of carbohydrate-
+restricted dietary patterns. In this context, the Committee has identified 
+two points that merit specific attention. 
+First, it recommends reducing carbohydrates by consuming fewer foods 
+with added sugars, sugar-containing beverages and foods with refined 
+grains, while opting for carbohydrate sources with sufficient dietary fibre, 
+such as vegetables, fruit, whole grain foods and legumes. With carbo-  
+hydrate restriction one’s carbohydrate intake may namely lead to a 
+decreased intake of dietary fibre. A diet low in dietary fibre is associated 
+with a higher risk of chronic diseases, such as colon cancer, coronary 
+heart disease and stroke.54 
+Secondly, the Committee recommends choosing good quality sources of 
+protein and fat, such as fish, legumes, nuts and vegetable oils, as people 
+on a carbohydrate-restricted diet will tend to eat relatively more fat and/or 
+protein instead of carbohydrates. One concern, therefore, is that they may 
+increase the intake of animal-based foods and saturated fat. In the short 
+term, an increase in saturated fat intake can result in an increase in, 
+among other things, LDL cholesterol, which increases the risk of coronary 
+heart disease in the long term.55 In its evaluation of carbohydrate-
+restricted dietary patterns, the Committee found heterogeneous effects on 
+LDL cholesterol (favourable, neutral and unfavourable effects), which were 
+probably caused, among other things, by differences in the macronutrients 
+used to replace carbohydrates. It is known from studies in the general 
+population that substituting carbohydrates with saturated fats increases 
+LDL cholesterol while substituting them with unsaturated fats lowers LDL 
+cholesterol.56 Cohort studies in people with type 2 diabetes show that 
+substituting carbohydrates with saturated fats is associated with a higher 
+risk of cardiovascular disease (see Background document Carbohydrate 
+and fat substitutions).57 
+234 36
+
+chapter 04 | Carbohydrate-restricted dietary pattern 
+
+
+Complete diet
+It is important to consume a complete diet in order to prevent nutrient 
+deficiencies. International intervention studies show that intakes of vitamin 
+B1, folate, magnesium, calcium, iron, and iodine decreased in people who 
+followed a carbohydrate-restricted diet for two weeks up to two years.58 It 
+is unknown whether a dietary pattern with a low or moderate quantity of 
+carbohydrates will lead to certain micronutrient deficiencies (nutritional 
+intake or nutritional status) in the Netherlands. This is not an easy  
+question to answer, as carbohydrate-restricted dietary patterns can take 
+many forms. Therefore, the Committee recommends calculating micro-  
+nutrient intake when individual dietary advice is given on a carbohydrate-
+restricted dietary pattern, with a special focus on micronutrients from 
+carbohydrate sources, such as iodine and vitamin B1.
+Adjustment of diabetes medication
+In general, with the use of medication that can lead to hypoglycaemia 
+(such as sulphonylurea derivatives and insulin), the use of this medication 
+should be adjusted to the amount of carbohydrates that are being 
+consumed. Furthermore, people with type 2 diabetes who are prescribed 
+SGLT-2 inhibitors, a relatively new class of blood glucose lowering drugs, 
+warrant special attention. These people run a small risk of developing 
+ketoacidosis with normal blood glucose levels (euglycaemia) if they use 
+these drugs. Ketoacidosis is a metabolic state in which the body produces 
+high levels of blood acids called ketones. This is a dangerous state and 
+may prompt certain bodily functions to fail. Using SGLT-2 inhibitors while 
+on a very low-carbohydrate diet (ketogenic diet) may increase the risk of 
+ketoacidosis, as this diet stimulates ketone production.59 Although the 
+chance of this happening is probably small, the Committee recommends 
+exercising caution with this combination.
+235 37
+
+chapter 04 | Carbohydrate-restricted dietary pattern 
+
+
+05 
+recommendations
+236 38
+
+chapter 05 | Recommendations 
+
+
+5.1 Dietary recommendations
+The Committee has the following recommendations that are applicable to 
+people with type 2 diabetes: 
+1. In the case of overweight and/or obesity, aim for at least 5% weight 
+reduction and maintain this in the long term. 
+2. The Dutch dietary guidelines are a suitable basis for a healthy and 
+varied dietary pattern for people with type 2 diabetes. The Dutch dietary 
+guidelines are set out in the box below.
+3. A carbohydrate-restricted dietary pattern may help achieve short-term 
+weight reduction and improve glucose metabolism in people with type 2 
+diabetes who are overweight or obese, but it is not recommended to 
+improve long-term health. This dietary pattern is also not discouraged 
+for people with type 2 diabetes who are overweight or obese and aim to 
+reduce their energy intake. Guidance from a dietician is preferable.
+Dutch dietary guidelines 2015
+Follow a dietary pattern that involves eating more plant-based and less  
+animal-based food, as recommended in the guidelines: 
+• Eat at least 200 grams of vegetables and at least 200 grams of fruit daily
+• Eat at least 90 grams of brown bread, wholemeal bread or other whole-grain 
+products daily
+• Eat legumes weekly
+• Eat at least 15 grams of unsalted nuts daily
+• Take a few portions of dairy products daily, including milk or yogurt. 
+• Eat fish weekly, preferably oily fish
+• Drink three cups of tea daily
+• Replace refined cereal products by whole-grain products.
+• Replace butter, hard margarines, and cooking fats by soft margarines, liquid 
+cooking fats, and vegetable oils. 
+• Replace unfiltered coffee by filtered coffee 
+• Limit the consumption of red meat, particularly processed meat.
+• Minimise consumption of sugar-containing beverages.
+• Don’t drink alcohol or no more than one glass daily.
+• Limit salt intake to 6 grams daily.
+• Nutrient supplementsa are not needed, except for specific groups for which 
+supplementation appliesb. 
+a The guideline on nutrient supplements concerns (multi)vitamins and minerals; 
+b For example, vitamin D supplements are recommended for various groups of people, such as 0 to 4-year-olds, 
+women aged 50 and over, and everyone aged 70 and over. 
+2237 39
+
+chapter 05 | Recommendations 
+
+
+5.2 Points of interest for professionals in implementing 
+the recommendations 
+Below, the Committee outlines several points of interest for professionals 
+who wish to incorporate its recommendations in nutritional information and 
+nutritional care for people with type 2 diabetes.
+5.2.1 Part of a multifactorial approach
+The treatment of type 2 diabetes is multifactorial and promoting a healthy 
+lifestyle is a major component of this multifactorial treatment. In addition to 
+eating a healthy diet, a healthy lifestyle also includes getting plenty of 
+exercise and not smoking, for example.3 The Committee’s  
+recommendations should be incorporated into multifactorial treatment 
+plans. Furthermore, the strive for weight loss in overweight and obese 
+people with type 2 diabetes should be applied in a broad context of  
+interventions aimed at weight reduction and weight maintenance31,35-37, 
+with the Committee’s recommendations serving as a basis for dietary 
+interventions. 
+5.2.2 The importance of a healthy, complete diet
+In order to compile a healthy, complete diet, dietary recommendations 
+from this advisory report should be combined with dietary reference 
+values for nutrients and energy when these are translated to specific 
+dietary advices for consumers. The Netherlands Nutrition Centre is 
+responsible for disseminating information about healthy dietary patterns 
+for the general population. To this end, the Netherlands Nutrition Centre 
+has incorporated both dietary guidelines and dietary reference values 
+established by the Dutch Health Council in its recommendations for a 
+healthy, complete diet (the so-called ‘Wheel of Five’), that matches the 
+dietary habits of the Dutch population as much as possible. For people 
+with chronic diseases, such as type 2 diabetes, the ‘Wheel of Five’ can 
+also serve as a basis for a healthy and complete diet. 
+Dieticians, in cooperation with other healthcare professionals, can provide 
+tailored dietary advice, for example on food quantities. In giving this 
+advice, they can make use of the dietary guidelines and dietary reference 
+values, and personal factors such as medication use and one’s preferred 
+body weight can be taken into account. 
+Dietary reference values are usually (but not exclusively) based on data 
+obtained from healthy people. These reference values are generally also 
+used for people with chronic diseases, unless professional associations 
+have issued deviating recommendations. Based on its expertise, the 
+Committee sees no objection to applying existing dietary reference values 
+to people with type 2 diabetes. However, it cannot rule out that people with 
+type 2 diabetes may, for some nutrients, have different requirements than 
+healthy people.
+238 40
+
+chapter 05 | Recommendations 
+
+
+As with the general population, it is preferable for people with type 2 
+diabetes to obtain all necessary nutrients through their diet, without taking 
+dietary supplements. If this proves impossible, the treatment team may 
+opt to test an individual’s personal nutrient levels and advise them to take 
+the necessary supplements.
+5.2.3 Points of interest with regard to weight
+The Committee recommends weight reduction for people with type 2 
+diabetes who are overweight or obese. Children and the elderly require 
+special attention when attempting to lose weight. In children, growth must 
+be taken into account. In the elderly, the consensus is that weight  
+reduction should only be considered in cases of obesity, partly because 
+there is also loss of bone and muscle mass during weight loss.38
+When people aim to maintain their body weight or limit weight gain, it can 
+be useful to pay attention to choices within the food groups on which the 
+Committee advises. Full-fat dairy products contain more calories than 
+semi-skimmed and skimmed dairy products, which may be a reason to opt 
+for skimmed or semi-skimmed dairy products. Fresh fruit generally 
+contains fewer sugars and therefore fewer calories than canned or jarred 
+fruit with added syrup. Tea and filtered coffee without sugar as well as 
+water are good alternatives to sugar-containing beverages in the context 
+of the energy balance. The Dutch dietary guidelines recommend a 
+minimum intake of nuts (i.e. no upper threshold). The Committee wishes 
+to stress that nuts are relatively energy-dense foods and cannot be eaten 
+in unrestricted amounts. 
+5.2.4 Points to consider with carbohydrate-restricted dietary 
+patterns
+For people with a preference for carbohydrate restriction, it is important to 
+pay attention to the quality of the diet to promote long-term health.  
+Therefore, the Committee recommends that the Dutch dietary guidelines 
+are taken into account in the compilation of the carbohydrate-restricted 
+dietary pattern. These can provide valuable assistance in choosing high-
+quality dietary sources of carbohydrates, such as vegetables, fruit and 
+whole grain foods, and good-quality sources of fats and proteins.  
+Carbohydrates should be limited mainly by reducing the intake of  
+low-fibre, carbohydrate-rich foods, such as sugar-containing beverages 
+and refined grain products. Cutting down on these foods is part of the 
+Dutch dietary guidelines and is recommended for all people, including 
+those with type 2 diabetes. It is important to ensure that the diet, whether 
+carbohydrate-restricted or not, contains sufficient quantities of important 
+nutrients, such as dietary fibre, vitamins and minerals. Therefore, the 
+guidance of a dietician is preferable. 
+It is also important to adjust any diabetes medication to the amount of 
+carbohydrates consumed in order to prevent hypoglycaemia.
+239 41
+
+chapter 05 | Recommendations 
+
+
+5.3 Dietary recommendations for people with pre-diabetes
+The current advisory report concerns people who have type 2 diabetes, 
+and studies on people with pre-diabetes have not been evaluated for this 
+report. Pre-diabetes is a preliminary stage of type 2 diabetes that involves 
+impaired fasting glucose and/or impaired glucose tolerance. This means 
+that blood glucose levels are elevated (in the fasting state and/or after a 
+glucose tolerance test), but not yet as high as in people with type 2 
+diabetes. People with pre-diabetes have a high chance of developing type 
+2 diabetes. Approximately 30% of the general population aged 60 and 
+over have impaired fasting glucose or impaired glucose tolerance.3 
+Several RCTs in people with pre-diabetes show that lifestyle interventions, 
+that include targeting adaptations in dietary intake, can be very effective in 
+this group. The studies showed that significantly fewer people in the life-
+style intervention groups developed diabetes and diabetes complications, 
+even in the very long term (up to 20 years).60-62 Based on this, the 
+Committee concludes that there are relatively large health gains to be 
+made in this group.
+The Committee is of the opinion that there is no reason to deviate from the 
+Dutch dietary guidelines for people with pre-diabetes. Firstly, because 
+people with pre-diabetes, as they are part of the general population, are 
+already included in the studies evaluated for the Dutch dietary guidelines. 
+Secondly, because the dietary components of the mentioned lifestyle 
+interventions were generally in line with the principles of the Dutch dietary 
+guidelines.60-62 
+5.4 Recommendations for follow-up research 
+Based on its evaluation, the Committee makes a number of suggestions 
+for follow-up research that may help to further specify and justify dietary 
+recommendations for people with type 2 diabetes.
+5.4.1 General foundation
+For several guidelines of the Dutch dietary guidelines, the Committee 
+found insufficient research to come to a conclusion, such as the guidelines 
+for dairy products and sugar-containing beverages. The Committee is of 
+the opinion that the existing guidelines are, for the time being, a good 
+basis for people with type 2 diabetes. However, further research 
+confirming (or disproving) this opinion is desirable. A future update  
+of the Dutch dietary guidelines for the general population may also  
+re-evaluate whether there are scientific reasons for adapting existing  
+recommendations. At that time, the consequences of this update for the 
+recommendations for people with type 2 diabetes can be re-evaluated.
+5.4.2 Long-term effects
+In its evaluation of carbohydrate-restricted dietary patterns, the Committee 
+noted the studies showed there are no differences when comparing carbo-
+hydrate restriction for 12 months to other dietary patterns. There are 
+240 42
+
+chapter 05 | Recommendations 
+
+
+hardly any studies on the health effects over a period longer than one 
+year. Participants also appeared to have difficulties in adhering to the 
+dietary patterns studied in the long term. Research that can provide 
+insight into how people with type 2 diabetes can adhere to a carbo-  
+hydrate-restricted dietary pattern for an extended period of time in a 
+healthy and complete way would be valuable. The effects on long-term 
+health should also be taken into account.
+5.4.3 Specific health outcomes
+The studies evaluated by the Committee focused mainly on the  
+relationship between dietary factors and the health outcomes ‘all-cause 
+mortality’ and the ‘development of cardiovascular disease’, or on  
+surrogate outcomes such as HbA1c. To the Committee’s knowledge, little 
+or no research has been done on the selected dietary factors in relation  
+to other complications of diabetes, such as chronic kidney damage, 
+neuropathy, retinopathy or infections. The Committee considers it  
+important that more research is done into the relationship between dietary 
+quality and the occurrence and course of these health outcomes in people 
+with type 2 diabetes. 
+5.4.4 Specific groups
+In this advisory report, the Committee concludes that the Dutch dietary 
+guidelines are a suitable basis for the dietary pattern of all people with 
+type 2 diabetes. Based on personal characteristics, there could be groups 
+of people for whom specific adjustments to these guidelines could be 
+recommended to further promote their health.53,63 The Committee also 
+investigated whether results in the reviewed studies are consistent in 
+specific groups of people classified by gender, age or medication use, for 
+example. However, there is currently too little research to make any  
+statements on this.
+5.4.5 Remission
+Several studies indicate that type 2 diabetes could be reversed (diabetes 
+remission) with dietary interventions in some people with type 2 
+diabetes,34,64,65 possibly through weight loss.34 However, based on the 
+current state of scientific knowledge, the Committee could not draw any 
+conclusions on the effects of the Dutch dietary guidelines and/or carbo-  
+hydrate restriction, and their added value within a multifactorial lifestyle 
+intervention, on diabetes remission. Further research is required.
+5.4.6 Combined lifestyle interventions
+A lot of research has already been done on the effects of combined  
+lifestyle interventions, with the dietary components based on tailored 
+general guidelines for a healthy diet, in people with pre-diabetes and/or 
+overweight or obesity.60-62,66-70 In such interventions, people get advice on 
+and guidance with sustained healthy eating and physical activity. In some 
+interventions, attention is also paid to sleep and stress. Several studies 
+241 43
+
+chapter 05 | Recommendations 
+
+
+show that long-term (up to 20 years) health gains can be achieved with 
+combined lifestyle interventions in people with pre-diabetes.60-62
+Combined lifestyle interventions for people who already have type 2 
+diabetes are becoming an increasingly popular research topic.34,71,72  
+These studies generally report on shorter term health effects (not beyond 
+2 years). Research into the long-term effects of combined lifestyle  
+interventions in people with type 2 diabetes, the dietary components of 
+which are based on the Dutch dietary guidelines, is desirable, such as on 
+weight maintenance and weight fluctuations. Research into how these 
+interventions can be sustained in the long term is also desirable. 
+242 44
+
+chapter 05 | Recommendations
