@@ -16,7 +16,8 @@ build/
 Thumbs.db
 *.log
 
-# ----- Android Studio ----
+# ----- AI ----
 
 .env
 environment.yml
+.ipynb_checkpoints/
