@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/home"
+            android:iconTint="@null" />
+
+        <item
+            android:id="@+id/camera"
+            android:title="Camera"
+            android:icon="@drawable/camera"
+            android:iconTint="@null" />
+
+        <item
+            android:id="@+id/progress"
+            android:title="Progress"
+            android:icon="@drawable/progress"
+            android:iconTint="@null" />
+
+        <item
+            android:id="@+id/assistant"
+            android:title="Assistant"
+            android:icon="@drawable/chat"
+            android:iconTint="@null" />
+
+        <item
+            android:id="@+id/user"
+            android:title="User"
+            android:icon="@drawable/profile"
+            android:iconTint="@null" />
+</menu>

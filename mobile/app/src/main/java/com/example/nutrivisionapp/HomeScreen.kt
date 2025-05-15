@@ -2,13 +2,14 @@ package com.example.nutrivisionapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.CalendarContract
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
@@ -20,12 +21,13 @@ import com.google.firebase.ktx.Firebase
 class HomeScreen : AppCompatActivity() {
     private lateinit var usernameTextView: TextView
     private lateinit var auth: FirebaseAuth
-    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_home_screen)
-        
+
+
+
         auth = Firebase.auth
         usernameTextView = findViewById(R.id.text_view_welcome_user)
         
@@ -38,15 +40,53 @@ class HomeScreen : AppCompatActivity() {
             fetchUserDataFromDatabase()
         }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_content)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val btnAddPicture: Button = findViewById(R.id.btn_add_picture)
-        btnAddPicture.setOnClickListener {
-            startActivity(Intent(this, Start::class.java))
+        val statusBar = findViewById<BottomNavigationView>(R.id.status).apply {
+            // Set home as selected
+            selectedItemId = R.id.home
+
+            setOnItemSelectedListener { item ->
+                when (item.itemId) {
+                    R.id.home -> {
+                        // Already heree
+                        true
+                    }
+                    R.id.camera -> {
+                        startActivity(Intent(this@HomeScreen, FoodCam::class.java))
+                        finish()
+                        true
+                    }
+                    R.id.progress -> {
+                        startActivity(Intent(this@HomeScreen, Progress::class.java))
+                        finish()
+                        true
+                    }
+                    R.id.assistant -> {
+                        startActivity(Intent(this@HomeScreen, Assistant::class.java))
+                        finish()
+                        true
+                    }
+                    R.id.user -> {
+                        startActivity(Intent(this@HomeScreen, User::class.java))
+                        finish()
+                        true
+                    }
+                    else -> false
+                }
+            }
+        }
+
+        val markDateButton = findViewById<Button>(R.id.calender)
+        markDateButton.setOnClickListener {
+            val intent = Intent(Intent.ACTION_INSERT).apply {
+                data = CalendarContract.Events.CONTENT_URI
+            }
+            startActivity(intent)
         }
     }
     

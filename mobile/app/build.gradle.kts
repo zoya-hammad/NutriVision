@@ -46,6 +46,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    // material design library
+    implementation ("com.google.android.material:material:1.12.0")
     
     // Firebase
     implementation(platform("com.google.firebase:firebase-bom:32.7.2"))

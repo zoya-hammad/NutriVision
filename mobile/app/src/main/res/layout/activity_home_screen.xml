@@ -1,26 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/main"
-    android:padding="16dp"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to NutriVision"
-        android:id="@+id/text_view_welcome_user"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="32dp"/>
 
-    <Button
-        android:id="@+id/btn_add_picture"
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="60dp"
+        android:layout_above="@id/status">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to NutriVision"
+            android:id="@+id/text_view_welcome_user"
+            android:textSize="24sp"
+            android:textColor="@color/green_dark"
+            android:textStyle="bold"
+            android:layout_marginBottom="100dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_picture"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Picture"
+            android:textColor="@color/green_light"
+            app:strokeColor="@color/green_light"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/log_recipe"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Recipe"
+            android:textColor="@color/green_light"
+            app:strokeColor="@color/green_light"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/assistant"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assistant"
+            android:textColor="@color/green_light"
+            app:strokeColor="@color/green_light"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/contact"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Doctor"
+            android:textColor="@color/green_light"
+            app:strokeColor="@color/green_light"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/text"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text Doctor"
+            android:textColor="@color/green_light"
+            app:strokeColor="@color/green_light"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/calender"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark Date"
+            android:textColor="@color/green_light"
+            app:strokeColor="@color/green_light"
+            app:cornerRadius="8dp"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/status"
+        layout="@layout/status_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Picture"
-        android:padding="16dp"/>
-
-</LinearLayout>
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -7,28 +7,24 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
-import android.provider.MediaStore
-import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.button.MaterialButton
-import com.google.firebase.auth.FirebaseAuth
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-class Start : AppCompatActivity() {
+class FoodCam : AppCompatActivity() {
 
     private lateinit var imagePreview: android.widget.ImageView
     private var photoUri: Uri? = null
     private val IMAGE_DIRECTORY = "MyAppImages"
-    private lateinit var linkSignOut: TextView
 
     private val PERMISSION_REQUEST_CODE = 2001
 
@@ -82,7 +78,7 @@ class Start : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_start)
+        setContentView(R.layout.activity_foodcam)
 
         imagePreview = findViewById(R.id.image_preview)
         val btnUpload: MaterialButton = findViewById(R.id.btn_upload)
@@ -97,6 +93,41 @@ class Start : AppCompatActivity() {
             if (imageFile.exists()) {
                 photoUri = FileProvider.getUriForFile(this, "$packageName.provider", imageFile)
                 imagePreview.setImageURI(photoUri)
+            }
+        }
+
+        val statusBar = findViewById<BottomNavigationView>(R.id.status).apply {
+            // Set camera as selected
+            selectedItemId = R.id.camera
+
+            setOnItemSelectedListener { item ->
+                when (item.itemId) {
+                    R.id.home -> {
+                        startActivity(Intent(this@FoodCam, HomeScreen::class.java))
+                        finish()
+                        true
+                    }
+                    R.id.camera -> {
+                        // Already here
+                        true
+                    }
+                    R.id.progress -> {
+                        startActivity(Intent(this@FoodCam, Progress::class.java))
+                        finish()
+                        true
+                    }
+                    R.id.assistant -> {
+                        startActivity(Intent(this@FoodCam, Assistant::class.java))
+                        finish()
+                        true
+                    }
+                    R.id.user -> {
+                        startActivity(Intent(this@FoodCam, User::class.java))
+                        finish()
+                        true
+                    }
+                    else -> false
+                }
             }
         }
 
@@ -116,11 +147,6 @@ class Start : AppCompatActivity() {
             Toast.makeText(this, "Food detection feature coming soon!", Toast.LENGTH_SHORT).show()
         }
 
-        linkSignOut= findViewById(R.id.link_sign_out)
-        linkSignOut.setOnClickListener {
-            FirebaseAuth.getInstance().signOut()
-            finishAffinity()
-        }
     }
 
     private fun hasPermissions(): Boolean {
@@ -170,10 +196,4 @@ class Start : AppCompatActivity() {
             .setNegativeButton("Cancel") { _, _ -> }
             .show()
     }
-
-
-
-
-
-
 }

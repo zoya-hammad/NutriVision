@@ -138,8 +138,6 @@
                 android:textColor="@color/green_dark"
                 android:textStyle="bold"
                 android:layout_marginStart="4dp"/>
-
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>

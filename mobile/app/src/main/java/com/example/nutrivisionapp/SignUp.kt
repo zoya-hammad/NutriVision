@@ -37,6 +37,7 @@ class SignUp : AppCompatActivity() {
         confirmPasswordEditText = findViewById(R.id.edit_text_confirm_password)
         termsCheckBox = findViewById(R.id.checkbox_terms)
         termsLink = findViewById(R.id.text_view_terms)
+        val signInText: TextView = findViewById(R.id.text_view_sign_in)
         val signUpButton: Button = findViewById(R.id.button_sign_up)
 
         termsLink.setOnClickListener {
@@ -48,7 +49,14 @@ class SignUp : AppCompatActivity() {
                 signUp()
             }
         }
+
+        signInText.setOnClickListener {
+            // Navigating to main activity
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
     }
+
 
     private fun validateInputs(): Boolean {
         val email = emailEditText.text.toString()
