@@ -21,3 +21,4 @@ Thumbs.db
 .env
 environment.yml
 .ipynb_checkpoints/
+__pycache__
