@@ -1,30 +1,30 @@
-Food Name,Glycemic Index,Carbohydrates,Fiber Content
-Apple,35,3.2,0.5
-Matar Paneer,0,0.0,0.0
-Pineapple,66,13.0,1.4
-Strawberries,40,7.0,2.0
-Flaxseeds,0,4.5,2.8
-Pineapple,66,13.1,1.4
-Strawberries,40,7.0,2.0
-Olive Oil,0,0.0,0.0
-Strawberries,40,7.0,2.0
-Pineapple,66,13.0,1.4
-Strawberries,40,7.0,2.0
-Pineapple,66,13.0,1.4
-Strawberries,40,7.0,2.0
-Strawberries,40,7.0,2.0
-Chia Seeds,0,4.5,2.8
-Chia Seed Oil,40,5.8,0.6
-Strawberries,40,7.0,2.0
-Pineapple,66,13.0,1.4
-Brussels Sprouts,40,3.9,1.2
-Pineapple,66,13.1,1.4
-Pineapple,66,13.0,1.4
-Apple,35,3.2,0.6
-Shawarma,0,0.0,0.0
-Matar Paneer,35,3.2,0.5
-Brussels Sprouts,40,5.8,0.6
-Lamb,0,0.0,0.0
-Strawberries,40,7.0,2.0
-Brussels Sprouts,40,5.8,0.4
-Lamb,0,0.0,0.0
+Food Name,Glycemic Index,Calories,Carbohydrates,Protein,Fat,Fiber Content
+Apple,35,54,3.2,0.3,3.0,0.5
+Matar Paneer,0,106,0.0,27.95,1.0,0.0
+Pineapple,66,50,13.0,0.5,0.1,1.4
+Strawberries,40,29,7.0,0.7,0.3,2.0
+Flaxseeds,0,106,4.5,14.0,2.0,2.8
+Pineapple,66,50,13.1,0.5,0.1,1.4
+Strawberries,40,29,7.0,0.7,0.3,2.0
+Olive Oil,0,106,0.0,27.95,1.0,0.0
+Strawberries,40,29,7.0,0.7,0.3,2.0
+Pineapple,66,50,13.0,0.5,0.1,1.4
+Strawberries,40,29,7.0,0.7,0.3,2.0
+Pineapple,66,50,13.0,0.5,0.1,1.4
+Strawberries,40,29,7.0,0.7,0.3,2.0
+Strawberries,40,29,7.0,0.7,0.3,2.0
+Chia Seeds,0,106,4.5,14.0,2.0,2.8
+Chia Seed Oil,40,43,5.8,0.7,0.4,0.6
+Strawberries,40,29,7.0,0.7,0.3,2.0
+Pineapple,66,50,13.0,0.5,0.1,1.4
+Brussels Sprouts,40,25,3.9,0.7,0.3,1.2
+Pineapple,66,50,13.1,0.5,0.1,1.4
+Pineapple,66,50,13.0,0.5,0.1,1.4
+Apple,35,54,3.2,0.3,3.0,0.6
+Shawarma,0,106,0.0,26.0,0.9,0.0
+Matar Paneer,35,54,3.2,0.3,3.0,0.5
+Brussels Sprouts,40,25,5.8,0.7,0.1,0.6
+Lamb,0,106,0.0,27.95,1.0,0.0
+Strawberries,40,29,7.0,0.7,0.3,2.0
+Brussels Sprouts,40,25,5.8,0.7,0.1,0.4
+Lamb,0,106,0.0,27.95,1.0,0.0
