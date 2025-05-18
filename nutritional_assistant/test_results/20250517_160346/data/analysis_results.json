@@ -1,0 +1,131 @@
+{
+  "timestamp": "20250517_160346",
+  "categories": {
+    "Simple": {
+      "num_recipes": 5,
+      "mean_difference": 45.6,
+      "median_difference": 49.5,
+      "max_difference": 53.0,
+      "worst_predictions": [
+        {
+          "recipe": "Basic Brown Rice Bowl",
+          "our_prediction": 2.0,
+          "expert_assessment": 55.0,
+          "difference": 53.0,
+          "factors": [
+            "The primary ingredient, brown rice, has a medium glycemic index.",
+            "Steamed vegetables typically have a low glycemic index, but their impact is minimal in this recipe due to the smaller portion size.",
+            "Olive oil and soy sauce have negligible glycemic impact, but the olive oil can help to slow the absorption of carbohydrates from the rice.",
+            "The cooking method of steaming the vegetables preserves their nutrients and does not raise their glycemic index."
+          ],
+          "suggestions": [
+            "To lower the glycemic impact, consider reducing the portion size of brown rice and increasing the portion of vegetables.",
+            "Adding a source of lean protein, such as chicken or tofu, can also help to slow the absorption of carbohydrates and lower the overall glycemic impact."
+          ],
+          "discrepancy_analysis": "The predicted GI of 2.0 seems to be significantly lower than expected. This could be due to an error in calculation or a misunderstanding of the glycemic index scale. The glycemic index of brown rice alone is typically around 50-60, and the other ingredients in this recipe do not significantly lower this value."
+        },
+        {
+          "recipe": "Basic Bean Bowl",
+          "our_prediction": 2.5,
+          "expert_assessment": 55.0,
+          "difference": 52.5,
+          "factors": [
+            "The black beans and brown rice are both high in fiber, which can help to slow the absorption of sugar into the bloodstream and reduce the overall glycemic impact.",
+            "The avocado is high in healthy fats, which can also slow the absorption of sugar and reduce the glycemic impact.",
+            "The lime juice may have a minimal effect on the glycemic index, but it can help to add flavor without adding additional sugar or carbohydrates.",
+            "The cooking method is relatively simple and does not involve any processes that would significantly alter the glycemic index of the ingredients."
+          ],
+          "suggestions": [
+            "To further reduce the glycemic impact, you could consider replacing some of the brown rice with additional vegetables, such as bell peppers or tomatoes.",
+            "Adding a source of lean protein, such as chicken or tofu, could also help to balance out the meal and further reduce the glycemic impact."
+          ],
+          "discrepancy_analysis": "The predicted GI of 2.5 seems to be significantly lower than what would be expected given the ingredients and cooking method. This could be due to a miscalculation or misunderstanding of the glycemic index. The glycemic index is a measure of how quickly a food causes blood sugar levels to rise, and while the ingredients in this recipe are relatively low-GI, they are not low enough to result in a GI of 2.5."
+        }
+      ]
+    },
+    "High GI": {
+      "num_recipes": 5,
+      "mean_difference": 59.0,
+      "median_difference": 65.0,
+      "max_difference": 82.5,
+      "worst_predictions": [
+        {
+          "recipe": "Pasta with White Sauce",
+          "our_prediction": 152.5,
+          "expert_assessment": 70.0,
+          "difference": 82.5,
+          "factors": [
+            "The white pasta is a high-GI food, which significantly contributes to the overall GI of the dish.",
+            "The white flour, used in the sauce, is also a high-GI ingredient.",
+            "The cooking method, boiling the pasta, can increase the GI as it breaks down the starches making them more readily available for digestion.",
+            "The addition of fats (butter and cheese) and protein (milk and cheese) can help to lower the GI of the meal overall, as they slow down the digestion process."
+          ],
+          "suggestions": [
+            "Replace the white pasta with whole grain pasta to lower the GI.",
+            "Use whole grain flour instead of white flour for the sauce.",
+            "Add more protein to the dish, such as chicken or tofu, to further lower the GI.",
+            "Include non-starchy vegetables to increase the fiber content and further reduce the GI."
+          ],
+          "discrepancy_analysis": "The predicted GI of 152.5 seems to be overestimated. While the dish does contain high-GI ingredients, the presence of fats and proteins would likely lower the overall GI. Additionally, the GI scale only goes up to 100, making the predicted value unrealistic."
+        },
+        {
+          "recipe": "White Rice and Sweet Potato Bowl",
+          "our_prediction": 3.0,
+          "expert_assessment": 70.0,
+          "difference": 67.0,
+          "factors": [
+            "The white rice has a high glycemic index, which significantly contributes to the overall GI of the meal.",
+            "Sweet potatoes have a medium glycemic index, which also contributes to the overall GI.",
+            "The honey and butter add sugars and fats, which can increase the GI.",
+            "The cooking methods used (baking and boiling) do not significantly lower the GI of the ingredients."
+          ],
+          "suggestions": [
+            "Replace the white rice with brown rice or quinoa, which have lower glycemic indexes.",
+            "Reduce the amount of honey or replace it with a natural sweetener with a lower GI, such as stevia.",
+            "Add more fiber to the meal, such as vegetables or legumes, to help lower the overall GI."
+          ],
+          "discrepancy_analysis": "The predicted GI of 3.0 seems to be significantly underestimated. The ingredients used in the recipe, particularly the white rice and sweet potato, have medium to high glycemic indexes. Additionally, the added honey and butter can increase the GI. Therefore, the assessed GI is much higher than the predicted one."
+        }
+      ]
+    },
+    "Low GI": {
+      "num_recipes": 5,
+      "mean_difference": 54.1,
+      "median_difference": 61.5,
+      "max_difference": 69.0,
+      "worst_predictions": [
+        {
+          "recipe": "Mediterranean Salad",
+          "our_prediction": 104.0,
+          "expert_assessment": 35.0,
+          "difference": 69.0,
+          "factors": [
+            "The majority of the ingredients in this recipe are low-glycemic foods, including mixed greens, cucumber, tomatoes, olives, feta cheese, olive oil, and lemon.",
+            "The recipe does not involve any cooking, which can sometimes increase the glycemic index of certain foods.",
+            "The portion sizes are appropriate and should not significantly impact the glycemic index of the meal."
+          ],
+          "suggestions": [
+            "There is no need to modify this recipe to lower its glycemic index, as it is already quite low. However, if desired, one could add more high-fiber vegetables or lean proteins to further reduce the GI."
+          ],
+          "discrepancy_analysis": "The predicted GI of 104.0 seems to be a mistake or misunderstanding. None of the ingredients in this recipe are high-glycemic foods, and the overall composition of the meal is balanced and healthy."
+        },
+        {
+          "recipe": "Grilled Salmon with Vegetables",
+          "our_prediction": 103.0,
+          "expert_assessment": 35.0,
+          "difference": 68.0,
+          "factors": [
+            "The primary ingredients in this recipe are salmon and vegetables, both of which have a low GI.",
+            "The cooking method, grilling and roasting, does not significantly affect the GI of the ingredients.",
+            "The portion sizes are reasonable and should not significantly impact the overall GI of the meal.",
+            "The overall meal composition is balanced with a good mix of protein, fats, and carbohydrates."
+          ],
+          "suggestions": [
+            "No major changes are needed as the recipe already has a low GI. However, to further reduce the GI, one could consider adding more fibrous vegetables or replacing some of the vegetables with legumes."
+          ],
+          "discrepancy_analysis": "The predicted GI of 103.0 seems to be an overestimation. This could be due to an incorrect assumption about the type of vegetables used or the portion sizes. However, given the ingredients listed, the GI should be much lower."
+        }
+      ]
+    }
+  }
+}
