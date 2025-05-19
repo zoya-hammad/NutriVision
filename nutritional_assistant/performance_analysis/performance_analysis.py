@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 # Create test results directory if it doesn't exist
-os.makedirs('test_results/performance_data', exist_ok=True)
+os.makedirs('performance_data', exist_ok=True)
 
 # Test results data
 data = {
@@ -16,7 +16,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Save to CSV
-csv_path = f'test_results/performance_data/deepseek_roberta_gpt4o_mini_performance_data.csv'
+csv_path = f'performance_data/deepseek_roberta_gpt4o_mini_performance_data.csv'
 df.to_csv(csv_path, index=False)
 
 # Create histogram
@@ -29,7 +29,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 
 # Save plot
-plot_path = f'test_results/performance_data/deepseek_roberta_gpt4o_mini_performance_histogram.png'
+plot_path = f'performance_data/deepseek_roberta_gpt4o_mini_performance_histogram.png'
 plt.savefig(plot_path)
 plt.close()
 
