@@ -22,3 +22,17 @@ Thumbs.db
 environment.yml
 .ipynb_checkpoints/
 __pycache__
+
+
+nutritional_assistant/agents/agent.py
+nutritional_assistant/agents/deals.py
+nutritional_assistant/agents/ensemble_agent.py
+nutritional_assistant/agents/frontier_agent.py
+nutritional_assistant/agents/messaging_agent.py
+nutritional_assistant/agents/planning_agent.py
+nutritional_assistant/agents/random_forest_agent.py
+nutritional_assistant/agents/scanner_agent.py
+nutritional_assistant/agents/specialist_agent.py
+nutritional_assistant/agents/xg_boost_agent.py
+nutritional_assistant/blueprint/day4.ipynb
+note.txt
