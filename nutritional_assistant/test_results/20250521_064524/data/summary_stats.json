@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "total_recipes": 15,
+        "mean_difference": 55.01614333333334,
+        "rmse": 72.24625185766732,
+        "std_difference": 48.47029517661478,
+        "max_difference": 184.30599999999998,
+        "min_difference": 4.624500000000005
+    },
+    "by_category": {
+        "Simple": {
+            "count": 5,
+            "mean_difference": 25.309620000000002,
+            "rmse": 28.142603876365104,
+            "std_difference": 13.758147058997443
+        },
+        "High GI": {
+            "count": 5,
+            "mean_difference": 85.03957,
+            "rmse": 86.87888017852498,
+            "std_difference": 19.881252327557235
+        },
+        "Low GI": {
+            "count": 5,
+            "mean_difference": 54.699239999999996,
+            "rmse": 85.54891436148094,
+            "std_difference": 73.5408890673277
+        }
+    }
+}
