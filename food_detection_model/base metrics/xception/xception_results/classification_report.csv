@@ -1,0 +1,21 @@
+,precision,recall,f1-score,support
+Aloo gobi,0.049689441,1,0.094674556,16
+Bhindi fry,0.5,0.111111111,0.181818182,18
+Ras malai,0,0,0,23
+bbq,0,0,0,14
+biryani,0,0,0,19
+brownie,0,0,0,16
+butter_chicken,0,0,0,22
+chai,0.272727273,0.15,0.193548387,20
+chapati,0,0,0,21
+chicken_tikka,0,0,0,14
+french_fries,0.5,0.047619048,0.086956522,21
+fried_rice,0,0,0,22
+haleem,0,0,0,19
+omelette,0,0,0,18
+paratha,0,0,0,33
+paratha_roll,0,0,0,27
+samosa,0,0,0,17
+accuracy,0.064705882,0.064705882,0.064705882,0.064705882
+macro avg,0.077789218,0.076984127,0.032764567,340
+weighted avg,0.075734049,0.064705882,0.030836985,340
