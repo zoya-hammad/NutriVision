@@ -26,15 +26,20 @@ train_data = tf.keras.preprocessing.image_dataset_from_directory(
 )
 class_names = train_data.class_names
 
-validation_data = tf.keras.preprocessing.image_dataset_from_directory(
+temp_data = tf.keras.preprocessing.image_dataset_from_directory(
     data,
-    validation_split=0.2,
+    validation_split=0.2,  # Same 20% as above
     subset="validation",
     seed=seed,
     image_size=image_size,
     batch_size=batch_size,
     label_mode="categorical",
 )
+
+# Split data (20%) into validation (10%) and test (10%)
+val_test_batches = len(temp_data)
+validation_data = temp_data.take(val_test_batches // 2)
+test_data = temp_data.skip(val_test_batches // 2)
 
 # Data augmentation 
 augmentation = tf.keras.Sequential([
@@ -48,18 +53,12 @@ augmentation = tf.keras.Sequential([
 def augment_data(image, label):
     return augmentation(image), label
 
+train_data = train_data.map(augment_data).prefetch(tf.data.AUTOTUNE)
+validation_data = validation_data.prefetch(tf.data.AUTOTUNE)
+test_data = test_data.prefetch(tf.data.AUTOTUNE)
+
 # Applying augmentation only to training data
 train_data = train_data.map(augment_data)
-
-# Normalization function
-def normalize(image, label):
-    return image / 255.0, label
-
-train_data = train_data.map(normalize)
-validation_data = validation_data.map(normalize)
-
-train_data = train_data.prefetch(tf.data.AUTOTUNE)
-validation_data = validation_data.prefetch(tf.data.AUTOTUNE)
 
 # Class distribution
 def class_distribution(dataset):
@@ -70,6 +69,7 @@ def class_distribution(dataset):
     return counts
 
 train_counts = class_distribution(train_data)
+test_counts = class_distribution(test_data)
 val_counts = class_distribution(validation_data)
 
 # Plot distribution
@@ -86,6 +86,7 @@ def plot_graph(counts, title, classes):
 
 plot_graph(train_counts, "Training Data Distribution", class_names)
 plot_graph(val_counts, "Validation Data Distribution", class_names)
+plot_graph(test_counts, "Test Data Distribution", class_names)
 
 # dataset statistics - csv 
 def save_to_csv(data_dict, filename="dataset_stats.csv"):
@@ -100,10 +101,12 @@ stats = {
     "Num Classes": len(class_names),
     "Training Samples": sum(train_counts.values()),
     "Validation Samples": sum(val_counts.values()),
+    "Test Samples": sum(test_counts.values()),
     "Batch Size": batch_size
 }
+
 save_to_csv(stats)
-print("\nDataset statistics saved to dataset_stats.csv")
+print("\nDataset statistics saved !!")
 
 # Exporting the processed data and class names
-__all__ = ['train_data', 'validation_data', 'class_names']
+__all__ = ['train_data', 'validation_data', 'test_data', 'class_names']

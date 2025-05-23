@@ -7,12 +7,12 @@ import numpy as np
 import os
 from datetime import datetime
 from sklearn.metrics import classification_report, confusion_matrix
-from preprocessing import train_data, validation_data, class_names
+from preprocessing import train_data, validation_data, test_data, class_names
 
 # Configuration
 IMAGE_SIZE = (224, 224)
 BATCH_SIZE = 32
-RESULTS_DIR = "model_results"
+RESULTS_DIR = "vgg16_results"
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 # Data Preparation - Applying VGG16 specific preprocessing
@@ -23,6 +23,7 @@ def prepare_data(image, label):
 
 train_data = train_data.map(prepare_data).prefetch(tf.data.AUTOTUNE)
 validation_data = validation_data.map(prepare_data).prefetch(tf.data.AUTOTUNE)
+test_data = test_data.map(prepare_data).prefetch(tf.data.AUTOTUNE)
 
 # Basic VGG16 Model
 base_model = VGG16(
@@ -49,7 +50,7 @@ model.compile(
 history = model.fit(
     train_data,
     validation_data=validation_data,
-    epochs=3,
+    epochs=15,
     verbose=1
 )
 
@@ -73,13 +74,14 @@ def evaluate_model(model, dataset, class_names):
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
     plt.xticks(rotation=45, ha='right')
+    plt.yticks(rotation=0)
     plt.tight_layout()
     plt.savefig(f"{RESULTS_DIR}/confusion_matrix.png")
     plt.close()
     
     return report
 
-report = evaluate_model(model, validation_data, class_names)
+report = evaluate_model(model, test_data, class_names)
 
 def plot_history(history):
     plt.figure(figsize=(12, 4))
@@ -116,16 +118,16 @@ def save_metrics(history, report):
         'average_f1': report['macro avg']['f1-score'],
         'timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
-    pd.DataFrame([metrics]).to_csv(f"{RESULTS_DIR}/model_metrics.csv", index=False)
+    pd.DataFrame([metrics]).to_csv(f"{RESULTS_DIR}/vgg16_metrics.csv", index=False)
 
 save_metrics(history, report)
 
 # model
 model.save(f"{RESULTS_DIR}/vgg16_model.h5")
 
-print("\nModel evaluation results saved in 'model_results' directory:")
+print("\nModel evaluation results saved in 'vgg16_results' directory:")
 print(f"- classification_report.csv: Detailed class-wise metrics")
 print(f"- confusion_matrix.png: Visual prediction breakdown")
 print(f"- training_history.png: Accuracy and loss curves")
-print(f"- model_metrics.csv: Key performance metrics")
+print(f"- vgg16_metrics.csv: Key performance metrics")
 print(f"- vgg16_model.h5: Saved model weights")
