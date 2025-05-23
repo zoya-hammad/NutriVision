@@ -1,0 +1,2 @@
+training_accuracy,validation_accuracy,test_accuracy,average_precision,average_recall,average_f1,timestamp
+0.943382382,0.762499988,0.794444444,0.823366829,0.787634914,0.77976983,5/24/2025 0:57
