@@ -1,11 +1,13 @@
 package com.example.nutrivisionapp
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.provider.CalendarContract
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -21,12 +23,11 @@ import com.google.firebase.ktx.Firebase
 class HomeScreen : AppCompatActivity() {
     private lateinit var usernameTextView: TextView
     private lateinit var auth: FirebaseAuth
+    private var doctorNumber: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
-
-
 
         auth = Firebase.auth
         usernameTextView = findViewById(R.id.text_view_welcome_user)
@@ -39,6 +40,9 @@ class HomeScreen : AppCompatActivity() {
             // Otherwise fetch from database
             fetchUserDataFromDatabase()
         }
+
+        // Fetch doctor's number
+        fetchDoctorNumber()
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_content)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -53,7 +57,7 @@ class HomeScreen : AppCompatActivity() {
             setOnItemSelectedListener { item ->
                 when (item.itemId) {
                     R.id.home -> {
-                        // Already heree
+                        // Already here
                         true
                     }
                     R.id.camera -> {
@@ -81,12 +85,68 @@ class HomeScreen : AppCompatActivity() {
             }
         }
 
+        // Set up call doctor button
+        findViewById<Button>(R.id.contact).setOnClickListener {
+            if (doctorNumber != null) {
+                val intent = Intent(Intent.ACTION_DIAL).apply {
+                    data = Uri.parse("tel:$doctorNumber")
+                }
+                startActivity(intent)
+            } else {
+                showAddNumberDialog()
+            }
+        }
+
+        // Set up text doctor button
+        findViewById<Button>(R.id.text).setOnClickListener {
+            if (doctorNumber != null) {
+                val intent = Intent(Intent.ACTION_SENDTO).apply {
+                    data = Uri.parse("smsto:$doctorNumber")
+                }
+                startActivity(intent)
+            } else {
+                showAddNumberDialog()
+            }
+        }
+
         val markDateButton = findViewById<Button>(R.id.calender)
         markDateButton.setOnClickListener {
             val intent = Intent(Intent.ACTION_INSERT).apply {
                 data = CalendarContract.Events.CONTENT_URI
             }
             startActivity(intent)
+        }
+    }
+
+    private fun showAddNumberDialog() {
+        AlertDialog.Builder(this)
+            .setTitle("Doctor's Number Not Found")
+            .setMessage("Would you like to add your doctor's number?")
+            .setPositiveButton("Add Number") { _, _ ->
+                // Navigate to User activity
+                startActivity(Intent(this, User::class.java))
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
+    }
+    
+    private fun fetchDoctorNumber() {
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            val userId = currentUser.uid
+            val userRef = Firebase.database.reference.child("users").child(userId)
+            
+            userRef.addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    if (snapshot.exists()) {
+                        doctorNumber = snapshot.child("doctorNumber").getValue(String::class.java)
+                    }
+                }
+                
+                override fun onCancelled(error: DatabaseError) {
+                    Toast.makeText(this@HomeScreen, "Failed to load doctor's number", Toast.LENGTH_SHORT).show()
+                }
+            })
         }
     }
     
