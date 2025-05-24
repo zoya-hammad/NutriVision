@@ -109,6 +109,11 @@ class HomeScreen : AppCompatActivity() {
             }
         }
 
+        // Set up assistant button
+        findViewById<Button>(R.id.assistant).setOnClickListener {
+            startActivity(Intent(this, Assistant::class.java))
+        }
+
         val markDateButton = findViewById<Button>(R.id.calender)
         markDateButton.setOnClickListener {
             val intent = Intent(Intent.ACTION_INSERT).apply {
