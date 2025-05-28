@@ -20,9 +20,7 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
     
     def __init__(self):
         """Initialize the GI analysis agent"""
-        super().__init__(
-            name="GI Analysis Agent (Finetuned 2)"
-        )
+        super().__init__(name="GI Analysis Agent (Finetuned 2)")
         
         # Load food database
         self.food_data = self._load_food_data()

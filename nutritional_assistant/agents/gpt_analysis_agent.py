@@ -3,11 +3,14 @@ import json
 from typing import Dict, Any
 from dotenv import load_dotenv
 import openai
+from .base_agent import BaseAgent
 
-class GPTAnalysisAgent:
+
+class GPTAnalysisAgent(BaseAgent):
     def __init__(self):
         """Initialize the GPT Analysis Agent."""
         load_dotenv()
+        super().__init__(name="GI Grader Agent")
         self.model = "gpt-4o-mini"
         
     def analyze_recipe(self, recipe: Dict[str, Any]) -> Dict[str, Any]:

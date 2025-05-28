@@ -15,9 +15,7 @@ class RecipeRecommendationAgent(BaseAgent):
     
     def __init__(self):
         """Initialize the recipe recommendation agent"""
-        super().__init__(
-            name="Recipe Recommendation Agent"
-        )
+        super().__init__(name="Recipe Recommendation Agent")
         
         # Initialize components
         self.model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')

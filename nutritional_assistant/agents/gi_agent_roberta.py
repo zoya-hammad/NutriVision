@@ -21,9 +21,7 @@ class GIAnalysisAgentRoBERTa(BaseAgent):
     
     def __init__(self):
         """Initialize the GI analysis agent"""
-        super().__init__(
-            name="GI Analysis Agent"
-        )
+        super().__init__(name="GI Analysis Agent")
         
         # Load food database
         self.food_data = self._load_food_data()
