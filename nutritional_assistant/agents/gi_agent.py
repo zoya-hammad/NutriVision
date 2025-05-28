@@ -16,8 +16,7 @@ class GIAnalysisAgent(BaseAgent):
     def __init__(self):
         """Initialize the GI analysis agent"""
         super().__init__(
-            name="GI Analysis Agent",
-            color=self.BLUE
+            name="GI Analysis Agent"
         )
         
         # Load food database
