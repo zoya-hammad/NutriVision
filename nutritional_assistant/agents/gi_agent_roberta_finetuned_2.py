@@ -21,8 +21,7 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
     def __init__(self):
         """Initialize the GI analysis agent"""
         super().__init__(
-            name="GI Analysis Agent (Finetuned 2)",
-            color=self.BLUE
+            name="GI Analysis Agent (Finetuned 2)"
         )
         
         # Load food database

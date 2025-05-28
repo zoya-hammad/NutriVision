@@ -16,8 +16,7 @@ class RecipeRecommendationAgent(BaseAgent):
     def __init__(self):
         """Initialize the recipe recommendation agent"""
         super().__init__(
-            name="Recipe Recommendation Agent",
-            color=self.GREEN
+            name="Recipe Recommendation Agent"
         )
         
         # Initialize components

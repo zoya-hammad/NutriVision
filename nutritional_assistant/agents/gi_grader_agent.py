@@ -15,8 +15,7 @@ class GIGraderAgent(BaseAgent):
     def __init__(self):
         """Initialize the GI grader agent with ensemble models"""
         super().__init__(
-            name="GI Grader Agent",
-            color=self.GREEN
+            name="GI Grader Agent"
         )
         load_dotenv()
         self.client = anthropic.Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
