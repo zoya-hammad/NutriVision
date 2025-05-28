@@ -1,0 +1,16 @@
+recipe,category,our_prediction,expert_assessment,prediction_difference,rmse
+Basic Brown Rice Bowl,Simple,19.46,50.0,30.54,932.6916
+Simple Lentil Soup,Simple,15.607000000000001,28.0,12.392999999999999,153.58644899999996
+Basic Quinoa Salad,Simple,5.0604,46.5,41.4396,1717.24044816
+Simple Tofu Stir Fry,Simple,21.401,42.5,21.099,445.167801
+Basic Bean Bowl,Simple,25.149,42.5,17.351,301.05720099999996
+White Rice and Sweet Potato Bowl,High GI,40.8801,60.0,19.1199,365.57057601
+Pasta with White Sauce,High GI,35.63999999999999,58.75,23.110000000000007,534.0721000000003
+Mashed Potatoes with Gravy,High GI,2.348,71.5,69.152,4781.999104
+White Bread Sandwich,High GI,0.23,73.75,73.52,5405.1903999999995
+Breakfast Cereal Bowl,High GI,44.543000000000006,68.0,23.456999999999994,550.2308489999997
+Mediterranean Salad,Low GI,2.1488,8.5,6.3512,40.33774144
+Grilled Salmon with Vegetables,Low GI,2.409,5.0,2.591,6.713281000000001
+Chickpea and Vegetable Stew,Low GI,15.914000000000001,35.0,19.086,364.27539599999994
+Greek Yogurt Parfait,Low GI,3.15,22.5,19.35,374.42250000000007
+Avocado and Egg Toast,Low GI,0.09499999999999999,38.75,38.655,1494.209025
