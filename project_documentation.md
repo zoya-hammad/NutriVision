@@ -185,10 +185,10 @@ flowchart TD
 - **GI Analysis Agent**
   - Complex pipeline for GI calculation:
     - Ingredient extraction and normalization
-    - Multiple API integrations:
+    - Integrations:
       - Food database for GI values
-      - Nutrition API for carb content
-      - Unit conversion service
+      - Open AI API for carb content
+      - Model API for Hugging Face Inference Endpoint
     - GI and load calculations
     - Nutritional impact assessment
   - Real-time processing capabilities
