@@ -252,7 +252,4 @@ flowchart TD
   - Model performance comparisons
 
 ## Future Enhancements
-- Additional model integrations
-- Extended recipe database
-- Enhanced nutritional analysis capabilities
-- Advanced monitoring and visualization features
+- Extended recipe database curated for South Asian cuisine
