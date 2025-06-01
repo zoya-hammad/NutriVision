@@ -39,6 +39,14 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
         self.model = self.model.to(self.device)
         self.model.eval()
         
+        # Define high GI ingredients to look for in titles
+        self.HIGH_GI_INGREDIENTS = [
+            'oats', 'oatmeal', 'rice', 
+            'pasta', 'bread', 'flour', 'yoghurt', 'honey', 'maple syrup',
+            'corn', 'cornmeal', 'pancake', 'waffle', 'muffin',
+            'cake', 'cookie', 'quinoa', 'toast', 'potatoes', 'white bread'
+        ]
+        
         # Define GI ranges for each class
         self.gi_ranges = {
             0: 2.0,   # 0-4
@@ -197,7 +205,13 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
             if not match.empty:
                 gi_value = match.iloc[0]['Glycemic Index']
                 if pd.notna(gi_value) and isinstance(gi_value, (int, float)):
-                    return float(gi_value)
+                    gi_value = float(gi_value)
+                    # Apply adjustments for high GI values
+                    if gi_value > 100:
+                        gi_value *= 0.8  # Subtract 20%
+                    elif gi_value > 90:
+                        gi_value *= 0.9  # Subtract 10%
+                    return gi_value
         
         # If not in database, use finetuned model
         try:
@@ -215,7 +229,15 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
                 predicted_class = torch.argmax(probs, dim=-1).item()
                 
                 # Get the GI value for the predicted class
-                return self.gi_ranges[predicted_class]
+                gi_value = self.gi_ranges[predicted_class]
+                
+                # Apply adjustments for high GI values
+                if gi_value > 100:
+                    gi_value *= 0.8  # Subtract 20%
+                elif gi_value > 90:
+                    gi_value *= 0.9  # Subtract 10%
+                    
+                return gi_value
             
         except Exception as e:
             print(f"Error getting GI value for {ingredient}: {str(e)}")
@@ -242,7 +264,7 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
                 
                 # Get carbohydrate content using LLM
                 prompt = f"""What is the carbohydrate content in grams per 100g for {ingredient['ingredient']}?
-                Return only a number. If uncertain, return 0."""
+                Return only a number between 0 and 100. If uncertain, return 0."""
                 
                 response = openai.chat.completions.create(
                     model="gpt-4o-mini",
@@ -263,7 +285,18 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
                 print(f"Debug - Carb Content: {carb_content}")
                 
                 # Convert quantity to grams if needed
-                quantity = float(ingredient['quantity'])
+                try:
+                    # Handle fractions in quantity
+                    quantity_str = str(ingredient['quantity']).strip()
+                    if '/' in quantity_str:
+                        num, denom = quantity_str.split('/')
+                        quantity = float(num) / float(denom)
+                    else:
+                        quantity = float(quantity_str)
+                except (ValueError, TypeError):
+                    print(f"Error converting quantity for {ingredient['ingredient']}, defaulting to 1")
+                    quantity = 1.0
+                
                 unit = ingredient['unit'].lower()
                 
                 # Convert to grams if not already
@@ -326,6 +359,17 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
             "recommendation": recommendation
         }
 
+    def has_high_gi_ingredient(self, title: str) -> bool:
+        """Check if recipe title contains high GI ingredients"""
+        title_lower = title.lower()
+        title_words = set(title_lower.split())
+        
+        # Check if any high GI ingredient is in the title words
+        for ingredient in self.HIGH_GI_INGREDIENTS:
+            if ingredient.lower() in title_words:
+                return True
+        return False
+
     def process(self, recipes: List[Dict[str, Any]]) -> Dict[str, Any]:
         """
         Process recipes and return the one with lowest glycemic load.
@@ -348,6 +392,28 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
                 
                 # Calculate glycemic load
                 glycemic_load = self.calculate_glycemic_load(ingredients)
+                print(f"\nInitial glycemic load for {recipe['title']}: {glycemic_load}")
+                
+                # Add weight for high GI ingredients in title
+                if self.has_high_gi_ingredient(recipe['title']):
+                    if glycemic_load <= 6:
+                        glycemic_load += 40
+                        print(f"Added 40 for high GI ingredients with low initial load in: {recipe['title']}")
+                    elif glycemic_load <= 40:
+                        glycemic_load += 20
+                        print(f"Added 20 for high GI ingredients in: {recipe['title']}")
+                    print(f"Glycemic load after high GI adjustment: {glycemic_load}")
+                
+                # Apply percentage adjustments based on final load
+                original_load = glycemic_load
+                if glycemic_load > 100:
+                    glycemic_load = glycemic_load * 0.8  # Subtract 20%
+                    print(f"Applied 20% reduction for load > 100: {original_load} -> {glycemic_load}")
+                elif glycemic_load > 80:
+                    glycemic_load = glycemic_load * 0.9  # Subtract 10%
+                    print(f"Applied 10% reduction for load > 80: {original_load} -> {glycemic_load}")
+                
+                print(f"Final glycemic load after all adjustments: {glycemic_load}")
                 
                 # Analyze glycemic load
                 gl_analysis = self.analyze_glycemic_load(glycemic_load)
@@ -360,7 +426,8 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
                         'ingredients': ingredients,
                         'instructions': recipe['instructions'],
                         'glycemic_load': glycemic_load,
-                        'gl_analysis': gl_analysis
+                        'gl_analysis': gl_analysis,
+                        'has_high_gi_ingredient': self.has_high_gi_ingredient(recipe['title'])
                     }
             
             if not best_recipe:

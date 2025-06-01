@@ -28,18 +28,22 @@ LOW_GI_RECIPES = [
         ],
         "instructions": "Grill salmon. Roast vegetables. Serve together with lemon and herbs."
     },
-    {
-        "title": "Chickpea and Vegetable Stew",
-        "ingredients": [
-            "2 cups chickpeas",
-            "2 cups mixed vegetables",
-            "1 onion",
-            "2 tbsp olive oil",
-            "1 tsp cumin",
-            "1 tsp turmeric"
-        ],
-        "instructions": "Sauté vegetables and spices. Add chickpeas and simmer until vegetables are tender."
+   {
+    "title": "Lentil and Spinach Curry",
+    "ingredients": [
+        "1 cup green lentils",
+        "2 cups fresh spinach",
+        "1 tomato, chopped",
+        "1 onion, diced",
+        "2 cloves garlic, minced",
+        "1 tbsp olive oil",
+        "1 tsp cumin seeds",
+        "1/2 tsp ground turmeric",
+        "1/2 tsp ground coriander"
+    ],
+        "instructions": "Sauté cumin, garlic, and onion in olive oil until golden. Add tomato and spices. Stir in lentils and water, simmer until tender. Add spinach and cook until wilted."
     },
+
     {
         "title": "Greek Yogurt Parfait",
         "ingredients": [
