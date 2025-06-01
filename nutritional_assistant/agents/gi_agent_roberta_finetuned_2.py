@@ -32,7 +32,7 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
         
         # Load tokenizer and model
         self.tokenizer = AutoTokenizer.from_pretrained("roberta-base")
-        self.model = AutoModelForSequenceClassification.from_pretrained("zoya-hammadk/nutrivision-roberta-classification")
+        self.model = AutoModelForSequenceClassification.from_pretrained("zoya-hammadk/nutrivision-roberta-25")
         
         # Move model to GPU if available
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -41,16 +41,31 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
         
         # Define GI ranges for each class
         self.gi_ranges = {
-            0: 5.0,   # 0-10
-            1: 15.0,  # 11-20
-            2: 25.0,  # 21-30
-            3: 35.0,  # 31-40
-            4: 45.0,  # 41-50
-            5: 55.0,  # 51-60
-            6: 65.0,  # 61-70
-            7: 75.0,  # 71-80
-            8: 85.0,  # 81-90
-            9: 95.0   # 91-100
+            0: 2.0,   # 0-4
+            1: 6.0,   # 5-8
+            2: 10.0,  # 9-12
+            3: 14.0,  # 13-16
+            4: 18.0,  # 17-20
+            5: 22.0,  # 21-24
+            6: 26.0,  # 25-28
+            7: 30.0,  # 29-32
+            8: 34.0,  # 33-36
+            9: 38.0,  # 37-40
+            10: 42.0, # 41-44
+            11: 46.0, # 45-48
+            12: 50.0, # 49-52
+            13: 54.0, # 53-56
+            14: 58.0, # 57-60
+            15: 62.0, # 61-64
+            16: 66.0, # 65-68
+            17: 70.0, # 69-72
+            18: 74.0, # 73-76
+            19: 78.0, # 77-80
+            20: 82.0, # 81-84
+            21: 86.0, # 85-88
+            22: 90.0, # 89-92
+            23: 94.0, # 93-96
+            24: 98.0  # 97-100
         }
         
     def _load_food_data(self) -> pd.DataFrame:
