@@ -2,13 +2,10 @@ package com.example.nutrivisionapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import android.view.LayoutInflater
@@ -55,7 +52,7 @@ class FoodJournal : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_progress)
+        setContentView(R.layout.activity_food_journal)
 
         auth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance()
@@ -110,6 +107,7 @@ class FoodJournal : AppCompatActivity() {
                         journalEntries.add(entry)
                     }
                 }
+                journalEntries.reverse()
                 adapter.notifyDataSetChanged()
             }
 
