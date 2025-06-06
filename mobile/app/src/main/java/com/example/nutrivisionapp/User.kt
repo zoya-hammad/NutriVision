@@ -43,8 +43,8 @@ class User : AppCompatActivity() {
                         finish()
                         true
                     }
-                    R.id.progress -> {
-                        startActivity(Intent(this@User, Progress::class.java))
+                    R.id.food_journal -> {
+                        startActivity(Intent(this@User, FoodJournal::class.java))
                         finish()
                         true
                     }
