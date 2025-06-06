@@ -13,8 +13,8 @@
             android:iconTint="@null" />
 
         <item
-            android:id="@+id/progress"
-            android:title="Progress"
+            android:id="@+id/food_journal"
+            android:title="Journal"
             android:icon="@drawable/progress"
             android:iconTint="@null" />
 
