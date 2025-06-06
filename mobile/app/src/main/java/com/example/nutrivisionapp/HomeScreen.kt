@@ -65,8 +65,8 @@ class HomeScreen : AppCompatActivity() {
                         finish()
                         true
                     }
-                    R.id.progress -> {
-                        startActivity(Intent(this@HomeScreen, Progress::class.java))
+                    R.id.food_journal -> {
+                        startActivity(Intent(this@HomeScreen, FoodJournal::class.java))
                         finish()
                         true
                     }
@@ -112,6 +112,11 @@ class HomeScreen : AppCompatActivity() {
         // Set up assistant button
         findViewById<Button>(R.id.assistant).setOnClickListener {
             startActivity(Intent(this, Assistant::class.java))
+        }
+
+        // Set up add picture button
+        findViewById<Button>(R.id.btn_add_picture).setOnClickListener {
+            startActivity(Intent(this, FoodCam::class.java))
         }
 
         val markDateButton = findViewById<Button>(R.id.calender)

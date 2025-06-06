@@ -45,8 +45,8 @@ class Assistant : AppCompatActivity() {
                         finish()
                         true
                     }
-                    R.id.progress -> {
-                        startActivity(Intent(this@Assistant, Progress::class.java))
+                    R.id.food_journal -> {
+                        startActivity(Intent(this@Assistant, FoodJournal::class.java))
                         finish()
                         true
                     }
