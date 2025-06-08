@@ -40,7 +40,7 @@ class RecipeRecommendationAgent(BaseAgent):
         
     def _load_dietary_guidelines(self) -> str:
         """Load and clean dietary guidelines from file"""
-        guidelines_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data preprocessing", "processed_data", "core_dietary_guidelines.txt")
+        guidelines_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data preprocessing", "processed_data", "core_dietary_guidelines_ollama.txt")
         try:
             with open(guidelines_path, 'r') as f:
                 guidelines = f.read()
