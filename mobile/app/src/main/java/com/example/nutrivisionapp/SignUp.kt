@@ -41,7 +41,7 @@ class SignUp : AppCompatActivity() {
         val signUpButton: Button = findViewById(R.id.button_sign_up)
 
         termsLink.setOnClickListener {
-            startActivity(Intent(this, TermsAndConditions::class.java))
+            startActivityForResult(Intent(this, TermsAndConditions::class.java), TERMS_REQUEST_CODE)
         }
 
         signUpButton.setOnClickListener {
@@ -57,6 +57,17 @@ class SignUp : AppCompatActivity() {
         }
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == TERMS_REQUEST_CODE) {
+            // If user clicked agree in TermsAndConditions, check the checkbox
+            termsCheckBox.isChecked = true
+        }
+    }
+
+    companion object {
+        private const val TERMS_REQUEST_CODE = 1001
+    }
 
     private fun validateInputs(): Boolean {
         val email = emailEditText.text.toString()
