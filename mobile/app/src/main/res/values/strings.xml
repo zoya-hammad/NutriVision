@@ -13,4 +13,12 @@
     <string name="edit_text_email">Email\n</string>
     <string name="edit_text_confirm_password">Confirm Password\n</string>
     <string name="button_sign_up">Sign Up</string>
+    <string name="openai_api_key">YOUR_API_KEY_HERE</string>
+    <string name="detect_food">Detect Food</string>
+    <string name="recipe_assistant">Recipe Assistant</string>
+    <string name="my_food_journal">My Food Journal</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="call_doctor">Call Doctor</string>
+    <string name="text_doctor">Text Doctor</string>
+    <string name="mark_date">Mark Date</string>
 </resources>
