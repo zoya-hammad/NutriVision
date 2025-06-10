@@ -32,7 +32,7 @@ class FoodAnalysisService(private val context: Context) {
     private val jsonMediaType = "application/json; charset=utf-8".toMediaTypeOrNull()
     
     // Modal deployment URL
-    private val baseUrl = "https://zoyahammadk--food-analysis-service-fastapi-app.modal.run"
+    private val baseUrl = BuildConfig.FOOD_ANALYSIS_BASE_URL
 
     suspend fun analyzeFood(
         foodName: String,
@@ -93,7 +93,7 @@ interface FoodAnalysisApi {
     suspend fun analyzeFood(@Body request: FoodAnalysisRequest): FoodAnalysisResponse
 
     companion object {
-        private const val BASE_URL = "https://zoyahammadk--food-analysis-service-fastapi-app.modal.run/"
+        private const val BASE_URL = BuildConfig.FOOD_ANALYSIS_BASE_URL
 
         fun create(): FoodAnalysisApi {
             return Retrofit.Builder()
