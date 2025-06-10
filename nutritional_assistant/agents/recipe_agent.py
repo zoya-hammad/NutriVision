@@ -64,7 +64,7 @@ class RecipeRecommendationAgent(BaseAgent):
     def vector(self, query):
         return self.model.encode([query])
 
-    def find_similar_recipes(self, query: str, n_results: int = 5) -> Tuple[List[str], List[Dict[str, Any]]]:
+    def find_similar_recipes(self, query: str, n_results: int = 3) -> Tuple[List[str], List[Dict[str, Any]]]:
         """
         Find similar recipes based on user query.
         
