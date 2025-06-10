@@ -119,6 +119,16 @@ class HomeScreen : AppCompatActivity() {
             startActivity(Intent(this, FoodCam::class.java))
         }
 
+        // Set up food journal button
+        findViewById<Button>(R.id.log_recipe).setOnClickListener {
+            startActivity(Intent(this, FoodJournal::class.java))
+        }
+
+        // My Recipes button - functionality removed for now
+        findViewById<Button>(R.id.my_recipes).setOnClickListener {
+            Toast.makeText(this, "Coming soon!", Toast.LENGTH_SHORT).show()
+        }
+
         val markDateButton = findViewById<Button>(R.id.calender)
         markDateButton.setOnClickListener {
             val intent = Intent(Intent.ACTION_INSERT).apply {
