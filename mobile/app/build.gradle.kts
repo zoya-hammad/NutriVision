@@ -21,8 +21,10 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         
-        // Production URL (from modal deploy)
-        buildConfigField("String", "API_BASE_URL", "\"https://zoyahammadk--food-detection-service-fastapi-app.modal.run/\"")
+        // Production Modal URL with explicit https protocol
+        buildConfigField("String", "DETECT_BASE_URL", "\"https://zoyahammadk--food-detection-service-fastapi-app.modal.run\"")
+        buildConfigField("String", "RECIPE_BASE_URL", "\"https://zoyahammadk--nutritional-assistant-fastapi-app.modal.run\"")
+        buildConfigField("String", "FOOD_ANALYSIS_BASE_URL", "\"https://zoyahammadk--food-analysis-service-fastapi-app.modal.run\"")
     }
 
     buildTypes {
