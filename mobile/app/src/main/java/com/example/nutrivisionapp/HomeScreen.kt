@@ -126,9 +126,11 @@ class HomeScreen : AppCompatActivity() {
 
         // Set up food journal button
         findViewById<Button>(R.id.log_recipe).setOnClickListener {
-            startActivity(Intent(this, FoodJournal::class.java))
             val streakMessage = StreakCounter.updateStreak(this)
-            findViewById<TextView>(R.id.streakTextView).text = streakMessage
+            val streakTextView = findViewById<TextView>(R.id.streakTextView)
+            streakTextView.text = streakMessage
+
+            startActivity(Intent(this, FoodJournal::class.java))
         }
 
         // Set up My Recipes button 

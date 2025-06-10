@@ -93,6 +93,9 @@ class FoodJournal : AppCompatActivity() {
 
         setupItemTouchHelper()
 
+        val streakMessage = StreakCounter.updateStreak(this)
+        findViewById<TextView>(R.id.streakTextView).text = streakMessage
+
         val statusBar = findViewById<BottomNavigationView>(R.id.status).apply {
             selectedItemId = R.id.food_journal
             setOnItemSelectedListener { item ->

@@ -1,6 +1,7 @@
 package com.example.nutrivisionapp
 
 import android.content.Context
+import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import java.util.*
@@ -37,6 +38,8 @@ object StreakCounter {
             diff == 0L -> {
                 return "You've already logged today!\nStreak: $streak days in a row!"
             }
+
+
         }
 
         editor.putInt("streak", streak)
