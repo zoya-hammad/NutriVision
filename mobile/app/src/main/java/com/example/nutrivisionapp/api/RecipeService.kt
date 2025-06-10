@@ -31,7 +31,7 @@ data class Recipe(
 
 // API Client
 object RecipeClient {
-    private val BASE_URL = "https://zoyahammadk--nutritional-assistant-fastapi-app.modal.run"
+    private val BASE_URL = BuildConfig.RECIPE_BASE_URL
 
     private val okHttpClient = OkHttpClient.Builder()
         .connectTimeout(30, TimeUnit.SECONDS)
