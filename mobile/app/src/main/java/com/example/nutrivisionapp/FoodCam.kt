@@ -104,7 +104,7 @@ class FoodCam : AppCompatActivity() {
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl(BuildConfig.API_BASE_URL)
+            .baseUrl(BuildConfig.DETECT_BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
@@ -225,7 +225,11 @@ class FoodCam : AppCompatActivity() {
                 withContext(Dispatchers.Main) {
                     // Dismiss loading dialog
                     loadingDialog.dismiss()
-                    Toast.makeText(this@FoodCam, "Error: ${e.message}", Toast.LENGTH_SHORT).show()
+                    AlertDialog.Builder(this@FoodCam)
+                        .setTitle("Error Detecting Food") 
+                        .setMessage("Error: ${e.message}")
+                        .setPositiveButton("OK", null)
+                        .show()
                 }
             }
         }
@@ -364,6 +368,7 @@ class FoodCam : AppCompatActivity() {
         val entry = mapOf(
             "id" to entryId,
             "foodName" to foodName,
+            "description" to "",
             "timestamp" to System.currentTimeMillis()
         )
         journalRef.child(entryId).setValue(entry)
