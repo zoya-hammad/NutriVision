@@ -131,14 +131,16 @@ class Assistant : AppCompatActivity() {
         recipeCard.findViewById<TextView>(R.id.recipe_title).text = recipe.title
         
         // Set glycemic load
-        recipeCard.findViewById<TextView>(R.id.glycemic_load).text = 
-            "${recipe.glycemicLoad} (${getGlycemicLoadCategory(recipe.glycemicLoad)})"
+        val glycemicLoadText = recipeCard.findViewById<TextView>(R.id.glycemic_load)
+        val glCategory = recipe.gl_analysis["category"] as? String ?: getGlycemicLoadCategory(recipe.glycemic_load)
+        val glRecommendation = recipe.gl_analysis["recommendation"] as? String ?: ""
+        glycemicLoadText.text = "Glycemic Load: ${String.format("%.1f", recipe.glycemic_load)} ($glCategory)\n$glRecommendation"
         
         // Add ingredients
         ingredientsContainer = recipeCard.findViewById(R.id.ingredients_container)
         recipe.ingredients.forEach { ingredient ->
             val ingredientView = TextView(this).apply {
-                text = "• $ingredient"
+                text = "• ${ingredient.quantity} ${ingredient.unit} ${ingredient.ingredient}"
                 setPadding(0, 4, 0, 4)
             }
             ingredientsContainer.addView(ingredientView)
