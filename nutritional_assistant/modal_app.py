@@ -14,7 +14,7 @@ image = modal.Image.debian_slim().pip_install(
     "openai",
     "torch",
     "transformers",
-    "sentence-transformers", 
+    "sentence-transformers",
     "chromadb",
     "pandas",
     "pydantic"
@@ -43,6 +43,7 @@ class RecipeResponse(BaseModel):
     glycemic_load: float
     ingredients: List[Ingredient]
     instructions: List[str]
+    gl_analysis: Dict[str, str]
     nutritional_info: Optional[Dict] = None
 
 class ErrorResponse(BaseModel):
@@ -87,7 +88,22 @@ def process_recipe_request(query: str, recipe_agent, gi_agent):
         if 'error' in best_recipe:
             return {"error": best_recipe['error']}
 
-        return best_recipe
+        # Convert the raw recipe data to RecipeResponse model
+        recipe_response = RecipeResponse(
+            title=best_recipe['title'],
+            glycemic_load=best_recipe['glycemic_load'],
+            ingredients=[
+                Ingredient(
+                    quantity=ing['quantity'],
+                    unit=ing['unit'],
+                    ingredient=ing['ingredient']
+                ) for ing in best_recipe['ingredients']
+            ],
+            instructions=best_recipe['instructions'],
+            gl_analysis=best_recipe['gl_analysis']
+        )
+        
+        return recipe_response.dict()
     except Exception as e:
         return {"error": str(e)}
 
