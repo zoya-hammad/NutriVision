@@ -13,7 +13,6 @@
         android:padding="60dp"
         android:layout_above="@id/status">
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,7 +35,29 @@
             android:layout_marginBottom="16dp"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/assistant"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipe Assistant"
+            android:textColor="@color/green_light"
+            app:strokeColor="@color/green_light"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/log_recipe"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Food Journal"
+            android:textColor="@color/green_light"
+            app:strokeColor="@color/green_light"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/my_recipes"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,16 +67,6 @@
             app:cornerRadius="8dp"
             android:layout_marginBottom="16dp"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/assistant"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Assistant"
-            android:textColor="@color/green_light"
-            app:strokeColor="@color/green_light"
-            app:cornerRadius="8dp"
-            android:layout_marginBottom="16dp"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/contact"
