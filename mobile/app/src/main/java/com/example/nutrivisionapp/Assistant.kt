@@ -2,12 +2,15 @@ package com.example.nutrivisionapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.speech.RecognizerIntent
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.example.nutrivisionapp.api.Recipe
 import com.example.nutrivisionapp.api.RecipeRequest
@@ -18,6 +21,7 @@ import com.google.android.material.textfield.TextInputEditText
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.util.Locale
 
 class Assistant : AppCompatActivity() {
     private lateinit var messageInput: TextInputEditText
@@ -29,6 +33,22 @@ class Assistant : AppCompatActivity() {
     private lateinit var recipeCard: View
     private lateinit var ingredientsContainer: LinearLayout
     private lateinit var instructionsContainer: LinearLayout
+
+    // Speech recognition launcher
+    private val speechRecognizer = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        if (result.resultCode == RESULT_OK) {
+            val data: Intent? = result.data
+            val results = data?.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
+            results?.get(0)?.let { spokenText ->
+                // Set the spoken text to the input field
+                messageInput.setText(spokenText)
+                // Automatically trigger the send button
+                sendButton.performClick()
+            }
+        } else {
+            Toast.makeText(this, "Speech recognition failed", Toast.LENGTH_SHORT).show()
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -86,9 +106,21 @@ class Assistant : AppCompatActivity() {
             }
         }
 
-        // Mic button (placeholder for now)
+        // Set up mic button for voice input
         micButton.setOnClickListener {
-            // Will implement voice input later
+            startVoiceRecognition()
+        }
+    }
+
+    private fun startVoiceRecognition() {
+        try {
+            val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+                putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+                putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault())
+            }
+            speechRecognizer.launch(intent)
+        } catch (e: Exception) {
+            Toast.makeText(this, "Speech recognition not available on this device", Toast.LENGTH_SHORT).show()
         }
     }
 
