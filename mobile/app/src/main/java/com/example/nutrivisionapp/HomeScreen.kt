@@ -1,6 +1,7 @@
 package com.example.nutrivisionapp
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.provider.CalendarContract
@@ -9,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SwitchCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -24,6 +26,9 @@ class HomeScreen : AppCompatActivity() {
     private lateinit var usernameTextView: TextView
     private lateinit var auth: FirebaseAuth
     private var doctorNumber: String? = null
+    private lateinit var switch: SwitchCompat
+    private lateinit var sharedPrefs: SharedPreferences
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -122,6 +127,8 @@ class HomeScreen : AppCompatActivity() {
         // Set up food journal button
         findViewById<Button>(R.id.log_recipe).setOnClickListener {
             startActivity(Intent(this, FoodJournal::class.java))
+            val streakMessage = StreakCounter.updateStreak(this)
+            findViewById<TextView>(R.id.streakTextView).text = streakMessage
         }
 
         // Set up My Recipes button 

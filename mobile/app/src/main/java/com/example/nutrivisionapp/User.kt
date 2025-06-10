@@ -1,7 +1,10 @@
 package com.example.nutrivisionapp
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.widget.SwitchCompat
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -21,11 +24,31 @@ class User : AppCompatActivity() {
     private lateinit var ageInput: TextInputEditText
     private lateinit var dietaryRestrictions: TextInputEditText
     private lateinit var allergies: TextInputEditText
+    private lateinit var switch: SwitchCompat
+    private lateinit var sharedPrefs: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        sharedPrefs = getSharedPreferences("settings", MODE_PRIVATE)
+        val isDarkMode = sharedPrefs.getBoolean("dark_mode", false)
+        AppCompatDelegate.setDefaultNightMode(
+            if (isDarkMode) AppCompatDelegate.MODE_NIGHT_YES
+            else AppCompatDelegate.MODE_NIGHT_NO
+        )
+
         setContentView(R.layout.activity_user)
 
+        switch = findViewById(R.id.darkModeSwitch)
+        switch.isChecked = isDarkMode
+        switch.setOnCheckedChangeListener { _, isChecked ->
+            sharedPrefs.edit().putBoolean("dark_mode", isChecked).apply()
+            AppCompatDelegate.setDefaultNightMode(
+                if (isChecked) AppCompatDelegate.MODE_NIGHT_YES
+                else AppCompatDelegate.MODE_NIGHT_NO
+            )
+            recreate()
+        }
         auth = FirebaseAuth.getInstance()
         database = Firebase.database.reference
 
@@ -35,7 +58,7 @@ class User : AppCompatActivity() {
         allergies = findViewById(R.id.allergies)
         linkSignOut = findViewById(R.id.link_sign_out)
 
-        val statusBar = findViewById<BottomNavigationView>(R.id.status).apply {
+        findViewById<BottomNavigationView>(R.id.status).apply {
             // Set user as selected
             selectedItemId = R.id.user
 

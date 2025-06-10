@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="?android:colorBackground">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,7 +25,16 @@
                 android:textStyle="bold"
                 android:textColor="@color/green_dark"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="32dp"/>
+                android:layout_marginBottom="26dp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/darkModeSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dark Mode"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"/>
+
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_change_password"
@@ -36,7 +45,7 @@
                 app:iconTint="@color/white"
                 app:cornerRadius="24dp"
                 android:backgroundTint="@color/green_light"
-                android:layout_marginBottom="28dp"/>
+                android:layout_marginBottom="20dp"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -60,7 +69,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="28dp"
+                android:layout_marginBottom="16dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 app:endIconMode="clear_text"
                 app:boxStrokeColor="@color/green_light"
@@ -138,7 +147,7 @@
                 app:iconTint="@color/white"
                 app:cornerRadius="24dp"
                 android:backgroundTint="@color/green_light"
-                android:layout_marginBottom="28dp"/>
+                android:layout_marginBottom="12dp"/>
 
             <TextView
                 android:id="@+id/link_sign_out"
@@ -146,6 +155,7 @@
                 android:layout_height="wrap_content"
                 android:text="Sign Out"
                 android:textStyle="bold"
+                android:textSize="14sp"
                 android:textColor="@color/green_light"
                 android:clickable="true"
                 android:focusable="true"
@@ -156,7 +166,7 @@
         </LinearLayout>
     </ScrollView>
 
-    
+
 
     <include
         layout="@layout/status_bar"
