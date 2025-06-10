@@ -245,7 +245,7 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
 
     def calculate_glycemic_load(self, ingredients: List[Dict[str, Any]]) -> float:
         """
-        Calculate the total glycemic load of a recipe.
+        Calculate the total glycemic load of a recipe using batch processing.
         
         Args:
             ingredients (List[Dict[str, Any]]): List of ingredient dictionaries
@@ -255,83 +255,132 @@ class GIAnalysisAgentRoBERTaFinetuned2(BaseAgent):
         """
         total_load = 0.0
         
-        for ingredient in ingredients:
+        try:
+            # Prepare batch prompt for all ingredients
+            ingredients_list = [ing['ingredient'] for ing in ingredients]
+            prompt = f"""You are a nutritional database assistant. For each ingredient listed below, provide its carbohydrate content in grams per 100g.
+            Return ONLY a valid JSON object with the following exact format, where each value is a number between 0 and 100:
+            
+            {{
+                "ingredient1": number,
+                "ingredient2": number
+            }}
+            
+            Ingredients to analyze:
+            {', '.join(ingredients_list)}
+            
+            Important:
+            1. Return ONLY the JSON object, no other text
+            2. Use exact ingredient names as keys
+            3. Use numbers only for values
+            4. If uncertain about an ingredient, use 0 as the value"""
+            
+            # Single API call for all ingredients
+            response = openai.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "system", "content": "You are a precise nutritional database that returns only valid JSON."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.1
+            )
+            
+            # Parse the response to get carb contents
+            response_text = response.choices[0].message.content.strip()
+            print(f"Debug - Raw API Response: {response_text}")
+            
             try:
-                # Get GI value
-                gi_value = self.get_gi_value(ingredient['ingredient'])
-                print(f"\nDebug - Ingredient: {ingredient['ingredient']}")
-                print(f"Debug - GI Value: {gi_value}")
+                # Clean the response text to ensure it's valid JSON
+                response_text = response_text.replace('\n', '').strip()
+                # Remove any text before the first { and after the last }
+                start_idx = response_text.find('{')
+                end_idx = response_text.rfind('}') + 1
+                if start_idx != -1 and end_idx != -1:
+                    response_text = response_text[start_idx:end_idx]
                 
-                # Get carbohydrate content using LLM
-                prompt = f"""What is the carbohydrate content in grams per 100g for {ingredient['ingredient']}?
-                Return only a number between 0 and 100. If uncertain, return 0."""
+                carb_contents = json.loads(response_text)
+                print(f"Debug - Parsed Carb Contents: {carb_contents}")
                 
-                response = openai.chat.completions.create(
-                    model="gpt-4o-mini",
-                    messages=[{"role": "user", "content": prompt}],
-                    temperature=0.1
-                )
+                # Validate the response format
+                if not isinstance(carb_contents, dict):
+                    raise ValueError("Response is not a dictionary")
                 
-                # Extract and sanitize carb content
-                carb_content = response.choices[0].message.content.strip()
+                # Ensure all ingredients have values
+                for ing in ingredients_list:
+                    if ing not in carb_contents:
+                        carb_contents[ing] = 0.0
+                    elif not isinstance(carb_contents[ing], (int, float)):
+                        carb_contents[ing] = 0.0
+                
+            except (json.JSONDecodeError, ValueError) as e:
+                print(f"Error parsing carb contents response: {str(e)}")
+                print("Defaulting to 0 for all ingredients")
+                carb_contents = {ing: 0.0 for ing in ingredients_list}
+            
+            # Process each ingredient
+            for ingredient in ingredients:
                 try:
-                    # Remove any non-numeric characters except decimal point
-                    carb_content = ''.join(c for c in carb_content if c.isdigit() or c == '.')
-                    carb_content = float(carb_content) if carb_content else 0.0
-                except (ValueError, TypeError):
-                    print(f"Error parsing carb content for {ingredient['ingredient']}, defaulting to 0")
-                    carb_content = 0.0
-                
-                print(f"Debug - Carb Content: {carb_content}")
-                
-                # Convert quantity to grams if needed
-                try:
-                    # Handle fractions in quantity
-                    quantity_str = str(ingredient['quantity']).strip()
-                    if '/' in quantity_str:
-                        num, denom = quantity_str.split('/')
-                        quantity = float(num) / float(denom)
-                    else:
-                        quantity = float(quantity_str)
-                except (ValueError, TypeError):
-                    print(f"Error converting quantity for {ingredient['ingredient']}, defaulting to 1")
-                    quantity = 1.0
-                
-                unit = ingredient['unit'].lower()
-                
-                # Convert to grams if not already
-                if unit in ['kg', 'kilo', 'kilogram']:
-                    quantity *= 1000
-                elif unit in ['oz', 'ounce']:
-                    quantity *= 28.35
-                elif unit in ['lb', 'pound']:
-                    quantity *= 453.59
-                elif unit in ['cup', 'cups']:
-                    quantity *= 240  # Approximate conversion
-                elif unit in ['tbsp', 'tablespoon', 'tablespoons']:
-                    quantity *= 15
-                elif unit in ['tsp', 'teaspoon', 'teaspoons']:
-                    quantity *= 5
-                
-                print(f"Debug - Original Quantity: {ingredient['quantity']} {unit}")
-                print(f"Debug - Converted Quantity (g): {quantity}")
-                
-                # Calculate glycemic load for this ingredient
-                # Formula: GL = (GI × grams of carbohydrate) / 100
-                # We need to calculate the actual grams of carbs in the quantity
-                actual_carbs = (carb_content * quantity) / 100  # Convert percentage to actual grams
-                ingredient_load = (gi_value * actual_carbs) / 100
-                print(f"Debug - Actual Carbs (g): {actual_carbs}")
-                print(f"Debug - Ingredient Load: {ingredient_load}")
-                
-                total_load += ingredient_load
-                
-            except Exception as e:
-                print(f"Error calculating load for {ingredient['ingredient']}: {str(e)}")
-                continue
-        
-        print(f"\nDebug - Total Glycemic Load: {total_load}")
-        return total_load
+                    # Get GI value
+                    gi_value = self.get_gi_value(ingredient['ingredient'])
+                    print(f"\nDebug - Ingredient: {ingredient['ingredient']}")
+                    print(f"Debug - GI Value: {gi_value}")
+                    
+                    # Get carb content from batch response
+                    carb_content = carb_contents.get(ingredient['ingredient'], 0.0)
+                    print(f"Debug - Carb Content: {carb_content}")
+                    
+                    # Convert quantity to grams if needed
+                    try:
+                        # Handle fractions in quantity
+                        quantity_str = str(ingredient['quantity']).strip()
+                        if '/' in quantity_str:
+                            num, denom = quantity_str.split('/')
+                            quantity = float(num) / float(denom)
+                        else:
+                            # Handle special characters like ½
+                            quantity_str = quantity_str.replace('½', '0.5').replace('¼', '0.25').replace('¾', '0.75')
+                            quantity = float(quantity_str)
+                    except (ValueError, TypeError):
+                        print(f"Error converting quantity for {ingredient['ingredient']}, defaulting to 1")
+                        quantity = 1.0
+                    
+                    unit = ingredient['unit'].lower()
+                    
+                    # Convert to grams if not already
+                    if unit in ['kg', 'kilo', 'kilogram']:
+                        quantity *= 1000
+                    elif unit in ['oz', 'ounce']:
+                        quantity *= 28.35
+                    elif unit in ['lb', 'pound']:
+                        quantity *= 453.59
+                    elif unit in ['cup', 'cups']:
+                        quantity *= 240  # Approximate conversion
+                    elif unit in ['tbsp', 'tablespoon', 'tablespoons']:
+                        quantity *= 15
+                    elif unit in ['tsp', 'teaspoon', 'teaspoons']:
+                        quantity *= 5
+                    
+                    print(f"Debug - Original Quantity: {ingredient['quantity']} {unit}")
+                    print(f"Debug - Converted Quantity (g): {quantity}")
+                    
+                    # Calculate glycemic load for this ingredient
+                    actual_carbs = (carb_content * quantity) / 100  # Convert percentage to actual grams
+                    ingredient_load = (gi_value * actual_carbs) / 100
+                    print(f"Debug - Actual Carbs (g): {actual_carbs}")
+                    print(f"Debug - Ingredient Load: {ingredient_load}")
+                    
+                    total_load += ingredient_load
+                    
+                except Exception as e:
+                    print(f"Error calculating load for {ingredient['ingredient']}: {str(e)}")
+                    continue
+            
+            print(f"\nDebug - Total Glycemic Load: {total_load}")
+            return total_load
+            
+        except Exception as e:
+            print(f"Error in batch processing: {str(e)}")
+            return 0.0
 
     def analyze_glycemic_load(self, glycemic_load: float) -> Dict[str, Any]:
         """
