@@ -18,14 +18,22 @@ class User : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var database: DatabaseReference
     private lateinit var linkSignOut: TextView
+    private lateinit var ageInput: TextInputEditText
+    private lateinit var dietaryRestrictions: TextInputEditText
+    private lateinit var allergies: TextInputEditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user)
 
-
         auth = FirebaseAuth.getInstance()
         database = Firebase.database.reference
+
+        // Initialize views
+        ageInput = findViewById(R.id.age_input)
+        dietaryRestrictions = findViewById(R.id.dietary_restrictions)
+        allergies = findViewById(R.id.allergies)
+        linkSignOut = findViewById(R.id.link_sign_out)
 
         val statusBar = findViewById<BottomNavigationView>(R.id.status).apply {
             // Set user as selected
@@ -62,7 +70,6 @@ class User : AppCompatActivity() {
             }
         }
 
-        linkSignOut= findViewById(R.id.link_sign_out)
         linkSignOut.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             finishAffinity()
@@ -75,7 +82,7 @@ class User : AppCompatActivity() {
         }
 
         findViewById<MaterialButton>(R.id.btn_save).setOnClickListener {
-            saveContactInfo()
+            saveUserProfile()
         }
     }
 
@@ -84,33 +91,32 @@ class User : AppCompatActivity() {
         val userId = auth.currentUser?.uid ?: return
 
         database.child("users").child(userId).get().addOnSuccessListener { snapshot ->
-            findViewById<TextInputEditText>(R.id.doctor_number).setText(
-                snapshot.child("doctorNumber").value?.toString().orEmpty()
-            )
-            findViewById<TextInputEditText>(R.id.hospital_number).setText(
-                snapshot.child("hospitalNumber").value?.toString().orEmpty()
-            )
+            ageInput.setText(snapshot.child("age").value?.toString().orEmpty())
+            dietaryRestrictions.setText(snapshot.child("dietaryRestrictions").value?.toString().orEmpty())
+            allergies.setText(snapshot.child("allergies").value?.toString().orEmpty())
         }
     }
 
     // saves to database
-    private fun saveContactInfo() {
+    private fun saveUserProfile() {
         val userId = auth.currentUser?.uid ?: return
-        val doctorNumber = findViewById<TextInputEditText>(R.id.doctor_number).text.toString()
-        val hospitalNumber = findViewById<TextInputEditText>(R.id.hospital_number).text.toString()
+        val age = ageInput.text.toString()
+        val dietaryRestrictionsText = dietaryRestrictions.text.toString()
+        val allergiesText = allergies.text.toString()
 
         val updates = mapOf(
-            "doctorNumber" to doctorNumber,
-            "hospitalNumber" to hospitalNumber
+            "age" to age,
+            "dietaryRestrictions" to dietaryRestrictionsText,
+            "allergies" to allergiesText
         )
 
         //errors checks ;)
         database.child("users").child(userId).updateChildren(updates)
             .addOnSuccessListener {
-                Toast.makeText(this, "Information saved", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Profile updated successfully", Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener {
-                Toast.makeText(this, "Save failed", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Failed to update profile", Toast.LENGTH_SHORT).show()
             }
     }
 }
