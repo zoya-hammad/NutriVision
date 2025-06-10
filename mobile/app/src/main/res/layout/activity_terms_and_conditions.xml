@@ -1,15 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/terms_text"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/terms_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/green_dark"
+            android:lineSpacingExtra="8dp"
+            android:text="Terms and Conditions
+
+1. Acceptance of Terms
+By accessing and using NutriVision, you agree to be bound by these Terms and Conditions.
+
+2. Privacy Policy
+Your privacy is important to us. We collect and use your personal information in accordance with our Privacy Policy.
+
+3. User Responsibilities
+- Use the app for its intended purpose
+- Not share your account credentials
+
+4. Medical Disclaimer
+NutriVision is not a substitute for professional medical advice. Always consult with healthcare professionals for medical decisions.
+
+5. Data Usage
+We may collect and use data to improve our services and provide personalized recommendations.
+
+6. Modifications
+We reserve the right to modify these terms at any time. Continued use of the app constitutes acceptance of modified terms.
+
+7. Limitation of Liability
+We are not liable for any damages arising from the use of our app.
+
+8. Contact
+For questions about these terms, please contact our support team.
+Email: support@nutrivision.com"/>
+
+    </ScrollView>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:text="Sample Text View"
-        android:lineSpacingExtra="8dp"/>
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</ScrollView> 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agree"
+            android:textColor="@color/white"
+            app:cornerRadius="24dp"
+            android:backgroundTint="@color/green_light"/>
+
+    </LinearLayout>
+
+</LinearLayout> 
