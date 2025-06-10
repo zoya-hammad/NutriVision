@@ -1,7 +1,7 @@
 import modal
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Any
 
 # Create Modal app
 app = modal.App("nutritional-assistant")
@@ -41,13 +41,10 @@ class Ingredient(BaseModel):
 class RecipeResponse(BaseModel):
     title: str
     glycemic_load: float
-    ingredients: List[Ingredient]
+    ingredients: List[Ingredient]  # Keep as List[Ingredient] to match curl output
     instructions: List[str]
-    gl_analysis: Dict[str, str]
+    gl_analysis: Dict[str, Any]
     nutritional_info: Optional[Dict] = None
-
-class ErrorResponse(BaseModel):
-    detail: str
 
 # Initialize agents
 @app.function(
@@ -94,7 +91,7 @@ def process_recipe_request(query: str, recipe_agent, gi_agent):
             glycemic_load=best_recipe['glycemic_load'],
             ingredients=[
                 Ingredient(
-                    quantity=ing['quantity'],
+                    quantity=str(ing['quantity']),  # Ensure quantity is string
                     unit=ing['unit'],
                     ingredient=ing['ingredient']
                 ) for ing in best_recipe['ingredients']
@@ -120,20 +117,23 @@ def fastapi_app():
     web_app = FastAPI()
     
     @web_app.post("/recommend_recipe")
-    async def recommend_recipe(request: RecipeRequest):
-        # Initialize agents
-        recipe_agent, gi_agent = initialize_agents.local()
-        
-        # Process request
-        result = process_recipe_request.local(
-            request.query,
-            recipe_agent,
-            gi_agent
-        )
-        
-        if "error" in result:
-            return {"error": result["error"]}
+    def recommend_recipe(request: RecipeRequest):
+        try:
+            # Initialize agents
+            recipe_agent, gi_agent = initialize_agents.local()
             
-        return result
+            # Process request
+            result = process_recipe_request.local(
+                request.query,
+                recipe_agent,
+                gi_agent
+            )
+            
+            if "error" in result:
+                raise HTTPException(status_code=400, detail=result["error"])
+                
+            return result
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=str(e))
     
     return web_app
