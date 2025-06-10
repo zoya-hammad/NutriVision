@@ -55,4 +55,3 @@ object RecipeClient {
     val recipeApi: RecipeService = retrofit.create(RecipeService::class.java)
 }
 
-git status --untracked-files=all
