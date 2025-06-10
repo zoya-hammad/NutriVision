@@ -3,6 +3,7 @@ import json
 import openai
 import chromadb
 import pandas as pd
+import time
 from typing import List, Dict, Any, Tuple
 from sentence_transformers import SentenceTransformer
 from .base_agent import BaseAgent
@@ -10,7 +11,7 @@ from .base_agent import BaseAgent
 class RecipeRecommendationAgent(BaseAgent):
     """
     Agent responsible for recommending recipes based on user queries and dietary guidelines.
-    Returns 5 recipes with nutritional information for glycemic load analysis.
+    Returns 3 recipes with nutritional information for glycemic load analysis.
     """
     
     def __init__(self):
@@ -18,7 +19,11 @@ class RecipeRecommendationAgent(BaseAgent):
         super().__init__(name="Recipe Recommendation Agent")
         
         # Initialize components
+        print("Initializing sentence transformer...")
+        start_time = time.time()
         self.model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+        print(f"Sentence transformer initialized in {time.time() - start_time:.2f} seconds")
+        
         self.db_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "vector_database", "recipes_vectorstore")
         self.client = None
         self.collection = None
@@ -31,9 +36,10 @@ class RecipeRecommendationAgent(BaseAgent):
         """Initialize connection to the existing vector database"""
         try:
             print("Connecting to vector database...")
+            start_time = time.time()
             self.client = chromadb.PersistentClient(path=self.db_path)
             self.collection = self.client.get_collection("recipes")
-            print("Connected to vector database successfully")
+            print(f"Connected to vector database successfully in {time.time() - start_time:.2f} seconds")
         except Exception as e:
             print(f"Error connecting to vector database: {str(e)}")
             raise
@@ -172,7 +178,7 @@ class RecipeRecommendationAgent(BaseAgent):
 
     def process(self, input_data: str) -> Dict[str, Any]:
         """
-        Process the user query and return 5 recipes with nutritional information.
+        Process the user query and return 3 recipes with nutritional information.
         
         Args:
             input_data (str): User query for recipe recommendation
@@ -181,21 +187,28 @@ class RecipeRecommendationAgent(BaseAgent):
             Dict[str, Any]: Dictionary containing recipes and their nutritional information
         """
         print(f"Processing query: {input_data}")
+        total_start_time = time.time()
         
         try:
             # Find similar recipes
+            print("Finding similar recipes...")
+            start_time = time.time()
             documents, metadatas = self.find_similar_recipes(input_data)
+            print(f"Found similar recipes in {time.time() - start_time:.2f} seconds")
             
             if not documents:
                 print("No recipes found for the query")
                 return {"error": "No recipes found matching your query"}
             
             # Parse recipes
+            print("Parsing recipes...")
+            start_time = time.time()
             recipes = []
             for doc, metadata in zip(documents, metadatas):
                 recipe = self.parse_recipe(doc, metadata)
                 if recipe:
                     recipes.append(recipe)
+            print(f"Parsed recipes in {time.time() - start_time:.2f} seconds")
             
             if not recipes:
                 print("No valid recipes found after parsing")
