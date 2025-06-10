@@ -18,15 +18,22 @@ interface RecipeService {
 // Request Data Class
 data class RecipeRequest(
     val query: String,
-    val num_recipes: Int = 3  // Default to 3 recipes
 )
 
 // Response Data Class
 data class Recipe(
     val title: String,
-    val glycemicLoad: Double,
-    val ingredients: List<String>,
-    val instructions: List<String>
+    val glycemic_load: Double,
+    val ingredients: List<Ingredient>,
+    val instructions: List<String>,
+    val gl_analysis: Map<String, Any>,
+    val nutritional_info: Map<String, Any>? = null
+)
+
+data class Ingredient(
+    val quantity: String,
+    val unit: String,
+    val ingredient: String
 )
 
 // API Client
@@ -34,9 +41,9 @@ object RecipeClient {
     private val BASE_URL = BuildConfig.RECIPE_BASE_URL
 
     private val okHttpClient = OkHttpClient.Builder()
-        .connectTimeout(30, TimeUnit.SECONDS)
-        .readTimeout(30, TimeUnit.SECONDS)
-        .writeTimeout(30, TimeUnit.SECONDS)
+        .connectTimeout(180, TimeUnit.SECONDS)
+        .readTimeout(180, TimeUnit.SECONDS)
+        .writeTimeout(180, TimeUnit.SECONDS)
         .build()
 
     private val retrofit = Retrofit.Builder()
