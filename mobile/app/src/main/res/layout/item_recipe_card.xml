@@ -70,7 +70,20 @@
             android:id="@+id/instructions_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"/>
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Save Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Recipe"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green_dark"
+            app:cornerRadius="8dp"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white"/>
 
     </LinearLayout>
 
