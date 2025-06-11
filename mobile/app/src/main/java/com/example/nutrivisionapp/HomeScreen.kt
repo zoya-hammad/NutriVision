@@ -129,6 +129,11 @@ class HomeScreen : AppCompatActivity() {
             }
             startActivity(intent)
         }
+
+        // Set up guide button
+        findViewById<Button>(R.id.guide).setOnClickListener {
+            startActivity(Intent(this, Guide::class.java))
+        }
     }
 
     override fun onResume() {
