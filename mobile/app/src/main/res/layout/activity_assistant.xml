@@ -77,7 +77,7 @@
         android:layout_above="@id/status"
         android:orientation="horizontal"
         android:padding="8dp"
-        android:background="@android:color/white"
+        android:background="?android:colorBackground"
         android:elevation="4dp">
 
         <com.google.android.material.textfield.TextInputLayout
