@@ -117,6 +117,7 @@ class User : AppCompatActivity() {
             ageInput.setText(snapshot.child("age").value?.toString().orEmpty())
             dietaryRestrictions.setText(snapshot.child("dietaryRestrictions").value?.toString().orEmpty())
             allergies.setText(snapshot.child("allergies").value?.toString().orEmpty())
+            findViewById<TextInputEditText>(R.id.doctor_number).setText(snapshot.child("doctorNumber").value?.toString().orEmpty())
         }
     }
 
@@ -126,11 +127,13 @@ class User : AppCompatActivity() {
         val age = ageInput.text.toString()
         val dietaryRestrictionsText = dietaryRestrictions.text.toString()
         val allergiesText = allergies.text.toString()
+        val doctorNumber = findViewById<TextInputEditText>(R.id.doctor_number).text.toString()
 
         val updates = mapOf(
             "age" to age,
             "dietaryRestrictions" to dietaryRestrictionsText,
-            "allergies" to allergiesText
+            "allergies" to allergiesText,
+            "doctorNumber" to doctorNumber,
         )
 
         //errors checks ;)
