@@ -36,7 +36,10 @@ object StreakCounter {
                 streak = 1
             }
             diff == 0L -> {
-                return "You've already logged today!\nStreak: $streak days in a row!"
+                return if (streak == 1)
+                    "You've already logged today!\nStreak: 1 day!"
+                else
+                    "You've already logged today!\nStreak: $streak days in a row!"
             }
 
 
@@ -64,14 +67,15 @@ object StreakCounter {
 
         //  motivation messages
         val motivation = when (streak) {
+            1 -> "You've logged meals today!\n Keep it up to develop a streak!"
             2 -> "You're getting into a rhythm! 💪"
             3 -> "3 days strong! Small steps, big results. 💪"
             4 -> "Consistency is your superpower. ⚡"
-            5 -> "Halfway to 10! You’re doing amazing. ✨"
+            5 -> "Halfway to 10! You're doing amazing. ✨"
             6 -> "You're on fire! 🔥 Don't break the streak!"
             7 -> "This habit is sticking — nice work!"
-            8 -> "You’re proving what dedication looks like."
-            9 -> "One day at a time. You’re building something great.💪"
+            8 -> "You're proving what dedication looks like."
+            9 -> "One day at a time. You're building something great.💪"
             10 -> "10 days strong! Incredible dedication! 🎉"
             else -> null
         }
