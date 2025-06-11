@@ -93,7 +93,8 @@ class FoodJournal : AppCompatActivity() {
 
         setupItemTouchHelper()
 
-        val streakMessage = StreakCounter.updateStreak(this)
+        // Get streak message from intent or update it
+        val streakMessage = intent.getStringExtra("streak_message") ?: StreakCounter.updateStreak(this)
         findViewById<TextView>(R.id.streakTextView).text = streakMessage
 
         val statusBar = findViewById<BottomNavigationView>(R.id.status).apply {
@@ -399,6 +400,10 @@ class FoodJournal : AppCompatActivity() {
                     journalEntries.reverse()
                     adapter.notifyDataSetChanged()
                     android.util.Log.d("FoodJournal", "Loaded ${journalEntries.size} entries.")
+                    
+                    // Update streak when entries are loaded
+                    val streakMessage = StreakCounter.updateStreak(this@FoodJournal)
+                    findViewById<TextView>(R.id.streakTextView).text = streakMessage
                 } catch (e: Exception) {
                     android.util.Log.e("FoodJournal", "Error parsing journal entries", e)
                     // Show error in a dialog for full visibility
