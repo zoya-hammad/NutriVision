@@ -90,18 +90,6 @@ class HomeScreen : AppCompatActivity() {
             }
         }
 
-        // Set up call doctor button
-        findViewById<Button>(R.id.contact).setOnClickListener {
-            if (doctorNumber != null) {
-                val intent = Intent(Intent.ACTION_DIAL).apply {
-                    data = Uri.parse("tel:$doctorNumber")
-                }
-                startActivity(intent)
-            } else {
-                showAddNumberDialog()
-            }
-        }
-
         // Set up text doctor button
         findViewById<Button>(R.id.text).setOnClickListener {
             if (doctorNumber != null) {
@@ -141,6 +129,12 @@ class HomeScreen : AppCompatActivity() {
             }
             startActivity(intent)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Refresh doctor's number when returning from User activity
+        fetchDoctorNumber()
     }
 
     private fun showAddNumberDialog() {
