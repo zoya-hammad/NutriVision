@@ -11,6 +11,7 @@ import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.nutrivisionapp.api.Recipe
 import com.example.nutrivisionapp.api.RecipeRequest
@@ -18,6 +19,10 @@ import com.example.nutrivisionapp.api.RecipeClient
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.chip.Chip
 import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -125,9 +130,19 @@ class Assistant : AppCompatActivity() {
     }
 
     private fun fetchRecipe(query: String) {
+        // Show loading dialog
+        val loadingDialog = AlertDialog.Builder(this)
+            .setView(R.layout.loading_dialog)
+            .setCancelable(false)
+            .create()
+        loadingDialog.show()
+
         val request = RecipeRequest(query)
         RecipeClient.recipeApi.getRecipe(request).enqueue(object : Callback<Recipe> {
             override fun onResponse(call: Call<Recipe>, response: Response<Recipe>) {
+                // Dismiss loading dialog
+                loadingDialog.dismiss()
+                
                 if (response.isSuccessful) {
                     response.body()?.let { recipe ->
                         showRecipeResponse(recipe)
@@ -145,6 +160,9 @@ class Assistant : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<Recipe>, t: Throwable) {
+                // Dismiss loading dialog
+                loadingDialog.dismiss()
+                
                 val errorMessage = """
                     Network error occurred.
                     Error Type: ${t.javaClass.simpleName}
@@ -187,9 +205,50 @@ class Assistant : AppCompatActivity() {
             }
             instructionsContainer.addView(instructionView)
         }
+
+        // Set up save button
+        recipeCard.findViewById<MaterialButton>(R.id.btn_save_recipe).setOnClickListener {
+            saveRecipe(recipe)
+        }
         
         messagesContainer.addView(recipeCard)
         scrollToBottom()
+    }
+
+    private fun saveRecipe(recipe: Recipe) {
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user == null) {
+            Toast.makeText(this, "Please sign in to save recipes", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        val userId = user.uid
+        val database = FirebaseDatabase.getInstance()
+        val recipesRef = database.reference.child("users").child(userId).child("saved_recipes")
+        val recipeId = recipesRef.push().key ?: System.currentTimeMillis().toString()
+
+        val savedRecipe = SavedRecipe(
+            id = recipeId,
+            title = recipe.title,
+            glycemicLoad = recipe.glycemic_load,
+            ingredients = recipe.ingredients.map { "${it.quantity} ${it.unit} ${it.ingredient}" },
+            instructions = recipe.instructions,
+            glAnalysis = recipe.gl_analysis.mapValues { it.value.toString() },
+            savedAt = System.currentTimeMillis()
+        )
+
+        recipesRef.child(recipeId).setValue(savedRecipe)
+            .addOnSuccessListener {
+                Toast.makeText(this, "Recipe saved!", Toast.LENGTH_SHORT).show()
+                Snackbar.make(findViewById(android.R.id.content), "Recipe saved!", Snackbar.LENGTH_LONG)
+                    .setAction("View Saved Recipes") {
+                        startActivity(Intent(this, MyRecipes::class.java))
+                    }
+                    .show()
+            }
+            .addOnFailureListener {
+                Toast.makeText(this, "Failed to save recipe", Toast.LENGTH_SHORT).show()
+            }
     }
 
     private fun getGlycemicLoadCategory(load: Double): String {
