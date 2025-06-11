@@ -45,6 +45,7 @@
         <activity android:name=".Assistant" android:exported="false" android:launchMode="singleTask" />
         <activity android:name=".User" android:exported="false" android:launchMode="singleTask" />
         <activity android:name=".Changepass" android:exported="false" android:launchMode="singleTask" />
+        <activity android:name=".RecipeDetailActivity" android:exported="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
