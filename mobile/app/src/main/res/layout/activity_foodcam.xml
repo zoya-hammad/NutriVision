@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,13 +11,28 @@
         android:padding="30dp"
         android:layout_above="@id/status">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Camera"
+            android:textSize="24sp"
+            android:textColor="@color/green_dark"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take a photo or upload an image of your food to log it."
+            android:textSize="16sp"
+            android:textColor="@color/green_light"
+            android:layout_marginBottom="24dp"/>
+
         <ImageView
             android:id="@+id/image_preview"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="250dp"
             android:scaleType="centerInside"
-            android:background="#EEEEEE"
             android:contentDescription="Image Preview" />
 
         <LinearLayout
@@ -29,10 +45,13 @@
                 android:id="@+id/btn_upload"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#757575"
                 android:padding="12dp"
-                android:text="Upload" />
+                android:text="Upload"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_camera"
@@ -41,16 +60,25 @@
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:padding="12dp"
-                android:text="Camera" />
+                android:text="Camera"
+                android:backgroundTint="#757575"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp" />
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_detect_food"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:padding="12dp"
-            android:text="Detect Food" />
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:text="Detect Food"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/green_dark"
+            android:textColor="@color/white"
+            app:cornerRadius="12dp"
+            app:elevation="4dp" />
     </LinearLayout>
 
     <include
