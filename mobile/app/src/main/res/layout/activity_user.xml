@@ -57,44 +57,6 @@
                 app:hintTextColor="@color/green_light">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/doctor_number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Doctor's Number"
-                    android:inputType="phone"
-                    android:imeOptions="actionDone"
-                    android:maxLines="1"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:endIconMode="clear_text"
-                app:boxStrokeColor="@color/green_light"
-                app:hintTextColor="@color/green_light">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/hospital_number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Hospital Number"
-                    android:inputType="phone"
-                    android:imeOptions="actionDone"
-                    android:maxLines="1"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:endIconMode="clear_text"
-                app:boxStrokeColor="@color/green_light"
-                app:hintTextColor="@color/green_light">
-
-                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/age_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -137,6 +99,26 @@
                     android:inputType="textMultiLine"
                     android:minLines="2" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:endIconMode="clear_text"
+                app:boxStrokeColor="@color/green_light"
+                app:hintTextColor="@color/green_light">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/doctor_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Doctor's Number"
+                    android:inputType="phone"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_save"
