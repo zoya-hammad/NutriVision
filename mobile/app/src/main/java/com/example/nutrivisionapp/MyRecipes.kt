@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import java.text.SimpleDateFormat
 import java.util.*
+import com.google.gson.Gson
 
 data class SavedRecipe(
     val id: String = "",
@@ -217,7 +218,9 @@ class MyRecipes : AppCompatActivity() {
     }
 
     private fun onRecipeClick(recipe: SavedRecipe) {
-        // TODO: Show recipe detail card
-        Toast.makeText(this, "Recipe details coming soon!", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, RecipeDetailActivity::class.java).apply {
+            putExtra("recipe_data", Gson().toJson(recipe))
+        }
+        startActivity(intent)
     }
 }
