@@ -26,8 +26,6 @@ class HomeScreen : AppCompatActivity() {
     private lateinit var usernameTextView: TextView
     private lateinit var auth: FirebaseAuth
     private var doctorNumber: String? = null
-    private lateinit var switch: SwitchCompat
-    private lateinit var sharedPrefs: SharedPreferences
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -88,6 +86,13 @@ class HomeScreen : AppCompatActivity() {
                     else -> false
                 }
             }
+        }
+
+        //scan food button
+        findViewById<Button>(R.id.scan).setOnClickListener {
+            startActivity(Intent(this, FoodScan::class.java))
+            finish()
+            true
         }
 
         // Set up text doctor button

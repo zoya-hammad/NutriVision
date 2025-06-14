@@ -33,6 +33,8 @@
                 android:layout_height="wrap_content"
                 android:text="Dark Mode"
                 android:textColor="@color/green_light"
+                app:thumbTint="?android:colorBackground"
+                app:trackTint="@color/green_light"
                 android:layout_marginBottom="12dp"/>
 
 

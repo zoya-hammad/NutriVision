@@ -1,7 +1,6 @@
 package com.example.nutrivisionapp
 
 import android.content.Context
-import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import java.util.*
@@ -25,26 +24,17 @@ object StreakCounter {
         val diff = today - lastDate
         var streak = prefs.getInt("streak", 0)
 
-        when {
-            lastDate == 0L -> {
-                streak = 1
-            }
-            diff == oneDayMillis -> {
-                streak += 1
-            }
-            diff > oneDayMillis -> {
-                streak = 1
-            }
-            diff == 0L -> {
-                return if (streak == 1)
-                    "You've already logged today!\nStreak: 1 day!"
-                else
-                    "You've already logged today!\nStreak: $streak days in a row!"
-            }
-
-
+        // streak logic
+        if (lastDate == 0L) {
+            streak = 1
+        } else if (diff == oneDayMillis) {
+            streak += 1
+        } else if (diff > oneDayMillis) {
+            streak = 1
         }
+        // If diff == 0L, streak stays the same (still today)
 
+        // Save updated streak and date
         editor.putInt("streak", streak)
         editor.putLong("lastDate", today)
         editor.apply()
@@ -65,9 +55,17 @@ object StreakCounter {
             userRef.setValue(streakData)
         }
 
-        //  motivation messages
-        val motivation = when (streak) {
-            1 -> "You've logged meals today!\n Keep it up to develop a streak!"
+        // Return message with motivation
+        val motivation = getMotivation(streak)
+        return if (motivation != null)
+            "Streak: $streak \n$motivation"
+        else
+            "Streak: $streak \nKeep it up!"
+    }
+
+    private fun getMotivation(streak: Int): String? {
+        return when (streak) {
+            1 -> "You've logged meals today!\nKeep it up to develop a streak!"
             2 -> "You're getting into a rhythm! 💪"
             3 -> "3 days strong! Small steps, big results. 💪"
             4 -> "Consistency is your superpower. ⚡"
@@ -75,14 +73,9 @@ object StreakCounter {
             6 -> "You're on fire! 🔥 Don't break the streak!"
             7 -> "This habit is sticking — nice work!"
             8 -> "You're proving what dedication looks like."
-            9 -> "One day at a time. You're building something great.💪"
+            9 -> "One day at a time. You're building something great. 💪"
             10 -> "10 days strong! Incredible dedication! 🎉"
             else -> null
         }
-
-        return if (motivation != null)
-            "You've logged meals $streak days in a row!\n$motivation"
-        else
-            "You've logged meals $streak days in a row!\n Keep it up!"
     }
 }
