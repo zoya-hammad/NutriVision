@@ -61,30 +61,11 @@ def softmax(x):
 
 def preprocess_image(image):
     """Preprocess image for model input"""
-    # Convert to RGB if not already
     if image.mode != 'RGB':
         image = image.convert('RGB')
-    
-    # Resize maintaining aspect ratio
-    target_size = (300, 300)
-    image.thumbnail((max(target_size), max(target_size)), Image.Resampling.LANCZOS)
-    
-    # Create new image with padding
-    new_image = Image.new('RGB', target_size, (0, 0, 0))
-    new_image.paste(image, ((target_size[0] - image.size[0]) // 2,
-                           (target_size[1] - image.size[1]) // 2))
-    
-    # Convert to numpy array and normalize
-    image_array = np.array(new_image, dtype=np.float32)
-    
-    # ImageNet normalization
-    mean = np.array([0.485, 0.456, 0.406], dtype=np.float32)
-    std = np.array([0.229, 0.224, 0.225], dtype=np.float32)
-    
-    # Normalize to [0,1] first, then apply ImageNet normalization
-    image_array = image_array / 255.0
-    image_array = (image_array - mean) / std
-    
+    image = image.resize((300, 300))
+    image_array = np.array(image, dtype=np.float32)
+    image_array = image_array / 127.5 - 1.0  # EfficientNet normalization
     return image_array.astype(np.float32)
 
 # Process image and make prediction
