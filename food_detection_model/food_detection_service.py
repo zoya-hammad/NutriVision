@@ -5,6 +5,7 @@ import io
 import json
 import os
 from fastapi import FastAPI, File, UploadFile
+import tensorflow as tf
 
 # Create a Modal app
 app = modal.App("food-detection-service")
@@ -60,12 +61,19 @@ def softmax(x):
     return exp_x / np.sum(exp_x)
 
 def preprocess_image(image):
-    """Preprocess image for model input"""
+    """Preprocess image for model input using the same preprocessing as training"""
     if image.mode != 'RGB':
         image = image.convert('RGB')
+    
+    # Resize to match training size
     image = image.resize((300, 300))
+    
+    # Convert to numpy array
     image_array = np.array(image, dtype=np.float32)
-    image_array = image_array / 127.5 - 1.0  # EfficientNet normalization
+    
+    # Apply EfficientNet preprocessing
+    image_array = tf.keras.applications.efficientnet.preprocess_input(image_array)
+    
     return image_array.astype(np.float32)
 
 # Process image and make prediction
@@ -73,50 +81,43 @@ def preprocess_image(image):
 def predict_food(image_bytes: bytes) -> str:
     import tensorflow as tf
     
-    # Load model
-    interpreter = load_model.local()
-    
-    # Get input and output details
-    input_details = interpreter.get_input_details()
-    output_details = interpreter.get_output_details()
-    
-    # Process image
-    image = Image.open(io.BytesIO(image_bytes))
-    image_array = preprocess_image(image)
-    image_array = np.expand_dims(image_array, axis=0)
-    
-    # Debug information
-    print(f"Input shape: {image_array.shape}")
-    print(f"Input dtype: {image_array.dtype}")
-    print(f"Input min/max: {image_array.min():.3f}/{image_array.max():.3f}")
-    print(f"Expected input shape: {input_details[0]['shape']}")
-    print(f"Expected input dtype: {input_details[0]['dtype']}")
-    
-    # Make prediction
-    interpreter.set_tensor(input_details[0]['index'], image_array)
-    interpreter.invoke()
-    output = interpreter.get_tensor(output_details[0]['index'])
-    
-    # Apply softmax to convert logits to probabilities
-    probabilities = softmax(output[0])
-    
-    # Debug output
-    print(f"Raw output (logits): {output[0]}")
-    print(f"Probabilities after softmax: {probabilities}")
-    print(f"Probabilities sum: {probabilities.sum():.4f}")
-    print(f"Top 5 predictions:")
-    top5_indices = np.argsort(probabilities)[-5:][::-1]
-    for i in top5_indices:
-        print(f"  Class {i} ({FOOD_CLASSES.get(i, 'Unknown')}): {probabilities[i]:.4f}")
-    
-    # Get class with highest probability
-    predicted_class = np.argmax(probabilities)
-    confidence = float(probabilities[predicted_class])
-    
-    # Get class name from mapping
-    class_name = FOOD_CLASSES.get(predicted_class, f"Unknown class {predicted_class}")
-    
-    return f"Detected: {class_name} (Confidence: {confidence:.2%})"
+    try:
+        # Load model
+        interpreter = load_model.local()
+        
+        # Get input and output details
+        input_details = interpreter.get_input_details()
+        output_details = interpreter.get_output_details()
+        
+        # Process image
+        image = Image.open(io.BytesIO(image_bytes))
+        image_array = preprocess_image(image)
+        image_array = np.expand_dims(image_array, axis=0)
+        
+        # Verify input shape and type
+        expected_shape = input_details[0]['shape']
+        if image_array.shape != tuple(expected_shape):
+            raise ValueError(f"Input shape mismatch. Expected {expected_shape}, got {image_array.shape}")
+        
+        # Make prediction
+        interpreter.set_tensor(input_details[0]['index'], image_array)
+        interpreter.invoke()
+        output = interpreter.get_tensor(output_details[0]['index'])
+        
+        # Apply softmax to convert logits to probabilities
+        probabilities = softmax(output[0])
+        
+        # Get class with highest probability
+        predicted_class = np.argmax(probabilities)
+        confidence = float(probabilities[predicted_class])
+        
+        # Get class name from mapping
+        class_name = FOOD_CLASSES.get(predicted_class, f"Unknown class {predicted_class}")
+        
+        return f"Detected: {class_name} (Confidence: {confidence:.2%})"
+        
+    except Exception as e:
+        return f"Error during prediction: {str(e)}"
 
 # Create FastAPI app using ASGI
 @app.function(image=image)
