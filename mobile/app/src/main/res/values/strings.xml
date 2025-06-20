@@ -21,4 +21,11 @@
     <string name="call_doctor">Call Doctor</string>
     <string name="text_doctor">Text Doctor</string>
     <string name="mark_date">Mark Date</string>
+    <string name="hi_i_m_your_nutritional_assistant">Hi! I\'m your Nutritional Assistant</string>
+    <string name="i_can_help_you_find_recipes_based_on_your_preferences_and_analyze_their_nutritional_value_try_asking_me_something_like">I can help you find recipes based on your preferences and analyze their nutritional value. Try asking me something like:</string>
+    <string name="show_me_low_carb_dinner_recipes">Show me low-carb dinner recipes</string>
+    <string name="what_can_i_cook_with_chicken_and_vegetables">What can I cook with chicken and vegetables?</string>
+    <string name="find_me_a_healthy_breakfast_recipe">Find me a healthy breakfast recipe</string>
+    <string name="ask_for_recipe_suggestions">Ask for recipe suggestions...</string>
+    <string name="food_journal">Food Journal</string>
 </resources>

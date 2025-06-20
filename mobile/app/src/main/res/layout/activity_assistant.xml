@@ -21,7 +21,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hi! I'm your Nutritional Assistant"
+                android:text="@string/hi_i_m_your_nutritional_assistant"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/green_dark"
@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I can help you find recipes based on your preferences and analyze their nutritional value. Try asking me something like:"
+                android:text="@string/i_can_help_you_find_recipes_based_on_your_preferences_and_analyze_their_nutritional_value_try_asking_me_something_like"
                 android:textSize="16sp"
                 android:layout_marginBottom="16dp"/>
 
@@ -44,7 +44,7 @@
                 <com.google.android.material.chip.Chip
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Show me low-carb dinner recipes"
+                    android:text="@string/show_me_low_carb_dinner_recipes"
                     android:layout_marginBottom="8dp"
                     android:onClick="onSuggestedQueryClick"
                     style="@style/Widget.MaterialComponents.Chip.Action"/>
@@ -52,7 +52,7 @@
                 <com.google.android.material.chip.Chip
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What can I cook with chicken and vegetables?"
+                    android:text="@string/what_can_i_cook_with_chicken_and_vegetables"
                     android:layout_marginBottom="8dp"
                     android:onClick="onSuggestedQueryClick"
                     style="@style/Widget.MaterialComponents.Chip.Action"/>
@@ -60,7 +60,7 @@
                 <com.google.android.material.chip.Chip
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Find me a healthy breakfast recipe"
+                    android:text="@string/find_me_a_healthy_breakfast_recipe"
                     android:layout_marginBottom="8dp"
                     android:onClick="onSuggestedQueryClick"
                     style="@style/Widget.MaterialComponents.Chip.Action"/>
@@ -91,7 +91,7 @@
                 android:id="@+id/message_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ask for recipe suggestions..."
+                android:hint="@string/ask_for_recipe_suggestions"
                 android:inputType="textMultiLine"
                 android:maxLines="6" />
 
