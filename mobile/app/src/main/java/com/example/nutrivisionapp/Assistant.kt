@@ -50,7 +50,8 @@ class Assistant : AppCompatActivity() {
                 // Automatically trigger the send button
                 sendButton.performClick()
             }
-        } else {
+        }
+        else {
             Toast.makeText(this, "Speech recognition failed", Toast.LENGTH_SHORT).show()
         }
     }
