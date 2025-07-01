@@ -55,7 +55,7 @@ class RecipeAdapter(
 
         fun bind(recipe: SavedRecipe, onClick: (SavedRecipe) -> Unit) {
             titleView.text = recipe.title
-            glycemicLoadView.text = "GL: ${recipe.glycemicLoad}"
+            glycemicLoadView.text = "GL: %.2f".format(recipe.glycemicLoad)
             
             val sdf = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
             savedDateView.text = "Saved: ${sdf.format(Date(recipe.savedAt))}"
